@@ -80,13 +80,13 @@ section{
 
 @media (min-width: 412px) and (orientation: portrait){
     .textopequeno{
-        font-size: 13px;
+        font-size: 12px;
     }
     .textodestaque{
         font-size: 42px;
     }
     .textoamarelo{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
@@ -120,13 +120,13 @@ section{
 
 @media (min-height: 412px) and (orientation: landscape){
     .textopequeno{
-        font-size: 13px;
+        font-size: 12px;
     }
     .textodestaque{
         font-size: 42px;
     }
     .textoamarelo{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
