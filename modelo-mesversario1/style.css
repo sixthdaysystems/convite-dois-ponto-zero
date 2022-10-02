@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/background-portrait-rosa.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+section{
+    width: 100vw;
+    height: 100vw;
+}
+
+.fotopequena{
+    width: 100%;
+    height: 33%;
+    background-color: #CF9174;
+}
+
+.fotogrande{
+    width: 99%;
+    height: 66.5%;
+    background-color: #CF9174;
+    float: right;
+}
