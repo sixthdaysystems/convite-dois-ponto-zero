@@ -42,8 +42,31 @@ section{
   color: white;
 }
 
+.textogrande h2{
+  font-size: 1.5em;
+}
+
 .textogrande h3{
   font-family: 'Shrikhand', cursive;
+  font-size: 1.5em;
+}
+
+@media (min-width: 375px) {
+  .textogrande h2{
+    font-size: 2em;
+  }
+  .textogrande h3{
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 768px) {
+  .textogrande h2{
+    font-size: 4em;
+  }
+  .textogrande h3{
+    font-size: 3.5em;
+  }
 }
 
 @media (orientation: landscape){
@@ -53,6 +76,21 @@ section{
   section{
     width: 100vh;
     height: 100vh;
+  }
+  .textogrande h2{
+    font-size: 1.5em;
+  }
+  .textogrande h3{
+    font-size: 1.5em;
+  }
+}
+
+@media (orientation: landscape) and (min-width:1024px) {
+  .textogrande h2{
+    font-size: 3em;
+  }
+  .textogrande h3{
+    font-size: 3em;
   }
 }
 
