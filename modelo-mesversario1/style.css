@@ -13,6 +13,12 @@ body{
   background-attachment: fixed;
 }
 
+img{
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 main{
   width: 100vw;
   height: 100vh;
@@ -71,7 +77,7 @@ section{
 
 @media (orientation: landscape){
   body{
-    background-image: url(img/background-landscape-rosa.svg);
+    background-image: url(img/background-landscape-azul.svg);
   }
   section{
     width: 100vh;
