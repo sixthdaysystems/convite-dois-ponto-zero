@@ -13,6 +13,14 @@ body{
     background-attachment: fixed;
 }
 
+h2{
+  font-size: calc(1.325rem + 3vw)!important;
+}
+
+h3{
+  font-size: calc(1rem + 3vw)!important;
+}
+
 img{
   height: 100%;
   object-fit: contain;
@@ -47,55 +55,23 @@ section{
     color: white;
 }
 
-.textogrande h2{
-    font-size: 1.5em;
-}
-
 .textogrande h3{
     font-family: 'Shrikhand', cursive;
-    font-size: 1.5em;
-}
-
-@media (min-width: 375px) {
-    .textogrande h2{
-      font-size: 2em;
-    }
-    .textogrande h3{
-      font-size: 1.7em;
-    }
-}
-
-@media (min-width: 768px) {
-    .textogrande h2{
-      font-size: 4em;
-    }
-    .textogrande h3{
-      font-size: 3.5em;
-    }
 }
 
 @media (orientation: landscape){
     body{
       background-image: url(img/background-landscape-azul.svg);
     }
+    h2{
+      font-size: calc(1rem + 2.6vw)!important;
+    }
+    h3{
+      font-size: calc(1.3rem + .6vw)!important;
+    }
     section{
       width: 100vh;
       height: 100vh;
-    }
-    .textogrande h2{
-      font-size: 1.5em;
-    }
-    .textogrande h3{
-      font-size: 1.5em;
-    }
-}
-
-@media (orientation: landscape) and (min-width:1024px) {
-    .textogrande h2{
-      font-size: 3em;
-    }
-    .textogrande h3{
-      font-size: 3em;
     }
 }
 
