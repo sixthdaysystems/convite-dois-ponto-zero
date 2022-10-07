@@ -60,6 +60,11 @@ section{
   font-family: 'Shrikhand', cursive;
 }
 
+article{
+  width: 100vw;
+  height: 100vh;
+}
+
 @media (orientation: landscape){
   body{
     background-image: url(img/background-landscape-rosa.svg);
