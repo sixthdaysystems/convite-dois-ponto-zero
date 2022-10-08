@@ -5,13 +5,13 @@
 *{
     box-sizing: border-box;
     font-family: 'Niconne', cursive;
-    overflow-x: hidden;
 }
 
 body{
     background-image: url(img/background-portrait-azul.svg);
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 h2{
