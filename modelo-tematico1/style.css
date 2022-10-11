@@ -3,9 +3,7 @@
 main{
     width: 100vw;
     height: 100vh;
-    /*background: linear-gradient(to top, white, black);*/
-    /*background: radial-gradient(80% 40%, white, black);*/
-    background-image: linear-gradient(to top, black, white, black);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.800), white, white, white, rgba(0, 0, 0, 0.800));
 }
 
 section{
@@ -14,34 +12,24 @@ section{
     background: url(img/background-festa.jpg) center/cover;
 }
 
-.personagem{
-    display: flex;
+#personagens{
     position: absolute;
-    width: 50px;
-    overflow: hidden;
 }
 
-#bunny{
-    top: 0px;
-    left: 0px;
+.personagem{
+    animation: 10s infinite alternate ease-in-out deslizar;
 }
 
-.pradireita{
-    animation: 16s infinite alternate ease-in-out pradireita;
-}
-@keyframes pradireita {
+@keyframes deslizar {
     0%{
-        margin-left: 0%;
-        opacity: 0.7;
-        width: 50px;
+        margin-top: 0%;
+        opacity: 1;
     }
     50%{
-        opacity: 1;
-        width: 60px;
+        opacity: 0.6;
     }
     100%{
-        margin-left: 85%;
-        opacity: 0.7;
-        width: 50px;
+        margin-top: 88vh;
+        opacity: 1;
     }
 }
