@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+main{
+    width: 100vw;
+    height: 100vh;
+    /*background: linear-gradient(to top, white, black);*/
+    /*background: radial-gradient(80% 40%, white, black);*/
+    background-image: linear-gradient(to top, black, white, black);
+}
+
+section{
+    width: 100vw;
+    height: 100vw;
+    background: url(img/background-festa.jpg) center/cover;
+}
+
+.personagem{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+#bunny{
+    top: 0px;
+    left: 0px;
+}
+
+.pradireita{
+    animation: 16s infinite alternate ease-in-out pradireita;
+}
+@keyframes pradireita {
+    0%{
+        margin-left: 0%;
+        opacity: 0.7;
+        width: 50px;
+    }
+    50%{
+        opacity: 1;
+        width: 60px;
+    }
+    100%{
+        margin-left: 85%;
+        opacity: 0.7;
+        width: 50px;
+    }
+}
