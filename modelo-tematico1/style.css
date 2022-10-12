@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'bubblegum';
+    src: url(fonts/Bubblegum.ttf) format('opentype');
+}
+
+*{
+    font-family: 'bubblegum';
+    text-shadow: 2px 2px white;
+}
 
 main{
     width: 100vw;
@@ -10,6 +19,11 @@ section{
     width: 100vw;
     height: 100vw;
     background: url(img/background-festa.jpg) center/cover;
+    border-style: ridge;
+}
+
+#foto{
+    border-style: dashed;
 }
 
 #personagens{
