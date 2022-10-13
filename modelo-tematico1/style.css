@@ -43,7 +43,7 @@ section{
         opacity: 0.6;
     }
     100%{
-        margin-top: 88vh;
+        margin-top: 80vh;
         opacity: 1;
     }
 }
