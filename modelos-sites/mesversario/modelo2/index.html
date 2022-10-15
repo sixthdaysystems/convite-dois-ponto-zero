@@ -18,7 +18,7 @@
             background-image: url(img/background-portrait-azul.svg);
             background-size: cover;
             background-attachment: fixed;
-            overflow-x: hidden;
+            overflow: hidden;
         }
         img{
             height: 100%;
@@ -26,12 +26,12 @@
             object-position: center center;
         }
         main{
-            width: 100vw!important;
-            height: 100vh!important;
+            width: 100vw;
+            height: 100vh;
         }
         section{
-            width: 100vw!important;
-            height: 100vw!important;
+            width: 100vw;
+            height: 100vw;
         }
         .fotopequena{
             width: 100%;
@@ -52,18 +52,14 @@
         .textogrande h3{
             font-family: 'Shrikhand', cursive;
         }
-        article{
-            width: 100vw;
-            height: 100vh;
-        }
         @media (orientation: landscape){
-        body{
-            background-image: url(img/background-landscape-azul.svg);
-        }
-        section{
-            width: 100vh!important;
-            height: 100vh!important;
-        }
+            body{
+                background-image: url(img/background-landscape-azul.svg);
+            }
+            section{
+                width: 100vh;
+                height: 100vh;
+            }
         }
         @media (max-width:310px) {
             .textogrande h2{
