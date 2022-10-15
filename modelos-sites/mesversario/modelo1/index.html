@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Mesversário 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+        *{
+            box-sizing: border-box;
+            font-family: 'Niconne', cursive;
+        }
+        body{
+            background-image: url(img/background-portrait-rosa.svg);
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+        section{
+            width: 100vw;
+            height: 100vw;
+        }
+        .fotopequena{
+            width: 100%;
+            height: 33%;
+            background-color: #CF9174;
+        }
+        .fotogrande{
+            width: 99%;
+            height: 66.5%;
+            background-color: #CF9174;
+        }
+        .textogrande{
+            width: 99%;
+            height: 33%;
+            background-color: #CF9174;
+            color: white;
+        }
+        .textogrande h3{
+            font-family: 'Shrikhand', cursive;
+        }
+        article{
+            width: 100vw;
+            height: 100vh;
+        }
+        @media (orientation: landscape){
+        body{
+            background-image: url(img/background-landscape-rosa.svg);
+        }
+        section{
+            width: 100vh;
+            height: 100vh;
+        }
+        }
+        @media (max-width:310px) {
+            .textogrande h2{
+                font-size: 10px;
+            }
+            .textogrande h3{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex justify-content-center align-items-center">
+        <section>
+            <div class="row h-100 m-0">
+                <div class="col-5 h-100 p-0 d-flex flex-column justify-content-between">
+                    <div class=" m-0 fotopequena"><img class=" roll-in-left" src="img/menina1.webp" alt="Selfie"></div>
+                    <div class=" m-0 fotopequena"><img class=" roll-in-left" src="img/menina2.webp" alt="Selfie"></div>
+                    <div class=" m-0 fotopequena"><img class=" roll-in-left" src="img/menina3.webp" alt="Selfie"></div>
+                </div>
+                <div class="col-7 h-100 p-0 d-flex flex-column justify-content-between align-items-end">
+                    <div class="row m-0 fotogrande"><img class="scale-in-center p-0" src="img/menina4.webp" alt="Selfie"></div>
+                    <div class="row m-0 textogrande text-center align-content-center">
+                        <h2 class="focus-in-expand m-0">mesversário</h2>
+                        <h3 class="focus-in-expand m-0">da Helena</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
