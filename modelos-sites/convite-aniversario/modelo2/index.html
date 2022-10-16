@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: 'GrutchShaded';
+            src: url(fonts/GrutchShaded.ttf) format('opentype');
+        }
+        p{
+            margin: 0px;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        h1{
+            font-family: 'GrutchShaded';
+        }
+        section{
+            width: 100vw;
+            height: 100vw;
+            background-image: url(img/quadro-negro.jpg);
+            background-size: cover;
+        }
+        @media (orientation:landscape) {
+            section{
+                width: 100vh;
+                height: 100vh;
+            }
+        }
+        @media (min-width: 320px) and (orientation:portrait){
+  h1 {
+    font-size: calc(2.5rem + ((1vw - 3.2px) * 8.9286));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+@media (min-width: 320px) and (orientation:landscape){
+  h1 {
+    font-size: calc(2.5rem + ((1vh - 3.2px) * 8.9286));
+    min-height: 0vw;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+        @media (min-width: 320px) {
+            p {
+                font-size: calc(0.9375rem + ((1vw - 3.2px) * 4.6875));
+                min-height: 0vw;
+            }
+        }
+        @media (min-width: 768px) and (orientation:portrait){
+            p {
+                font-size: 36px;
+            }
+        }
+        @media (min-width: 320px) and (orientation:landscape){
+            p {
+                font-size: calc(0.9375rem + ((1vh - 3.2px) * 4.6875));
+                min-height: 0vw;
+            }
+        }
+        @media (min-width: 768px) {
+            p {
+                font-size: 24px;
+            }
+        }
+        @media (min-width: 768px) and (min-height: 768px) {
+            h1{
+                font-size: 80px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+        @media (min-width:1024px) {
+            h1{
+                font-size: 80px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex justify-content-center align-items-center text-light">
+        <section class="d-flex justify-content-center align-items-center flex-column">
+            <div class="mb-2">
+                <h1 class="m-0">Boteco</h1>
+                <h1 class="m-0">do Zeca</h1>
+            </div>
+            <div class="row m-0 row-cols-2">
+                <div class="align-items-center flex-column d-flex">
+                    <p>30 anos</p>
+                    <p>Domingo</p>
+                    <p>01</p>
+                    <p>Janeiro</p>
+                </div>
+                <div class="align-items-center flex-column d-flex">
+                    <p>Às 18hs</p>
+                    <p>Rua:</p>
+                    <p>Principal</p>
+                    <p>Nº 1</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
