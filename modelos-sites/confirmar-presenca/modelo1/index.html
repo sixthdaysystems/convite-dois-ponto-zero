@@ -7,12 +7,15 @@
     <title>Confirmar Presença</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         *{
-            font-family: 'Roboto', sans-serif;
+            font-family: 'GlacialIndifference';
+        }
+        @font-face {
+            font-family: 'GlacialIndifference';
+            src: url(/modelos-sites/convite-aniversario/modelo1/fonts/GlacialIndifference-Regular.otf) format('opentype');
         }
         body{
-            background-image: url(img/happy-birthday-gfaf6ab661_1920.webp);
+            background-image: url(/modelos-sites/convite-aniversario/modelo1/img/happy-birthday-gfaf6ab661_1920.webp);
             background-attachment: fixed;
             background-position: right;
             background-size: cover;
@@ -30,11 +33,11 @@
             }
         }
         p{
-            font-size: 10px;
+            font-size: 7vw;
         }
-        @media (min-width:320px) {
+        @media (orientation:landscape) {
             p{
-                font-size: 20px;
+                font-size: 7vh;
             }
         }
         #whatsapp p, a{
@@ -53,7 +56,7 @@
         <div id="whatsapp" class="text-center">
             <div class="col">
                 <p>Confirme a presença</p>
-                <p onclick="message()"><a href="#">Aqui</a></p>
+                <p onclick="message()"><a href="#">TAqui</a></p>
             </div>
         </div>
     </article>
