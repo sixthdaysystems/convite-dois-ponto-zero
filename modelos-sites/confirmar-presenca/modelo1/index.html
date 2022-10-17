@@ -7,12 +7,29 @@
     <title>Confirmar Presença</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
+        :root {
+            --white: #fff;
+            --blue: #3051f1;
+            --purple: #c92bb7;
+            --red: #f73344;
+            --orange: #fa8e37;
+            --yellow: #fcdf8f;
+            --yellow_to: #fbd377;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         *{
             font-family: 'Roboto', sans-serif;
         }
         body{
-            background-image: url(img/happy-birthday-gfaf6ab661_1920.webp);
+            background: radial-gradient(
+            circle farthest-corner at 28% 100%,
+            var(--yellow) 0%,
+            var(--yellow_to) 10%,
+            var(--orange) 22%,
+            var(--red) 35%,
+            transparent 65%
+            ),
+            linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
             background-attachment: fixed;
             background-position: right;
             background-size: cover;
@@ -51,7 +68,7 @@
 <body>
     <article class="d-flex align-items-center justify-content-center m-auto">
         <div id="whatsapp" class="text-center">
-            <div class="col">
+            <div class="col border border-3 rounded-4 p-2">
                 <p>Confirme a presença</p>
                 <p onclick="message()"><a href="#">Aqui</a></p>
             </div>
