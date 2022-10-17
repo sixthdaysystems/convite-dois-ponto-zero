@@ -35,12 +35,27 @@
             height: 100vw;
             background-image: url(img/quadro-negro.jpg);
             background-size: cover;
+            border: 5px solid sienna;
         }
         #texto-esquerda{
             margin-left: 20%;
         }
         #texto-direita{
             margin-right: 20%;
+        }
+        #margem-titulo{
+            margin-bottom: 1em;
+        }
+        @media (max-width:310px) {
+            p{
+                font-size: 11px;
+            }
+            h1{
+                font-size: 14px;
+            }
+            #margem-titulo{
+                margin-bottom: 6px;
+            }
         }
         @media (orientation:landscape) {
             section{
@@ -178,7 +193,7 @@
 <body>
     <main class="d-flex justify-content-center align-items-center text-light">
         <section class="d-flex justify-content-center align-items-center flex-column">
-            <div class="mb-4">
+            <div id="margem-titulo">
                 <h1 class="m-0 vibrate-3 ">Boteco</h1>
                 <h1 class="m-0 vibrate-3 ">do Zeca</h1>
             </div>
