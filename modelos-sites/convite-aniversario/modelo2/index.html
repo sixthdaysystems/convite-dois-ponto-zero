@@ -7,28 +7,14 @@
     <title>Boteco do Zeca</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
-        @font-face {
-            font-family: 'GrutchShaded';
-            src: url(fonts/GrutchShaded.ttf) format('opentype');
-        }
-        @font-face {
-            font-family: 'Crayon';
-            src: url(fonts/DK\ Crayon\ Crumble.ttf) format('opentype');
-        }
-        p{
-            margin: 0px;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
         }
         main{
             width: 100vw;
             height: 100vh;
             background-image: linear-gradient(to bottom right, black, gray, black, bisque, black, coral, black, cornflowerblue, black, darkkhaki, black);
-        }
-        h1{
-            font-family: 'GrutchShaded';
-        }
-        p{
-            font-family: 'Crayon';
-            line-height: normal;
         }
         section{
             width: 100vw;
@@ -37,49 +23,32 @@
             background-size: cover;
             border: 5px solid sienna;
         }
-        #texto-esquerda{
-            margin-left: 20%;
+        #boteco h1{
+            font-size: 10vw;
         }
-        #texto-direita{
-            margin-right: 20%;
+        #boteco p{
+            font-size: 6vw;
+            line-height: normal;
         }
-        #margem-titulo{
-            margin-bottom: 1em;
+        #text-main-left{
+            margin-left: 24%;
         }
-        @media (max-width:310px) {
-            p{
-                font-size: 11px;
-            }
-            h1{
-                font-size: 14px;
-            }
-            #margem-titulo{
-                margin-bottom: 6px;
-            }
+        #text-main-right{
+            margin-right: 24%;
         }
         @media (orientation:landscape) {
             section{
                 width: 100vh;
                 height: 100vh;
             }
-        }/*and (orientation:portrait)*/
-        @media (min-width: 320px) and (orientation:portrait) {
-            p{
-                font-size: 8vw;
+            #boteco h1{
+            font-size: 10vh;
             }
-            h1{
-                font-size: 12vw;
+            #boteco p{
+                font-size: 6vh;
             }
         }
-        @media (min-width: 320px) and (orientation:landscape) {
-            p{
-                font-size: 8vh;
-            }
-            h1{
-                font-size: 12vh;
-            }
-        }
-
+        
         .vibrate-3 {
             -webkit-animation: vibrate-3 1.2s linear 1s infinite both;
                     animation: vibrate-3 1.2s linear 1s infinite both;
@@ -192,18 +161,18 @@
 </head>
 <body>
     <main class="d-flex justify-content-center align-items-center text-light">
-        <section class="d-flex justify-content-center align-items-center flex-column">
-            <div id="margem-titulo">
-                <h1 class="m-0 vibrate-3 ">Boteco</h1>
-                <h1 class="m-0 vibrate-3 ">do Zeca</h1>
+        <section class="d-flex justify-content-center align-items-center flex-column" id="boteco">
+            <div class="my-2">
+                <h1 class="m-0 vibrate-3">Boteco</h1>
+                <h1 class="m-0 vibrate-3">do Zeca</h1>
             </div>
             <div class="row m-0">
                 <div class="w-50 col m-0 p-0">
-                    <p class="text-center me-2" id="texto-esquerda">30 Anos - Domingo - 01 - Janeiro</p>
+                    <p class="text-center me-2" id="text-main-left">30 Anos - Domingo - 01 - Janeiro</p>
                 </div>
                 <div class="vr p-0 color-white"></div>
                 <div class="w-50 col m-0 p-0">
-                    <p class="text-center ms-2" id="texto-direita">Às 18hs - Rua Principal - Nº 1</p>
+                    <p class="text-center ms-2" id="text-main-right">Às 18hs - Rua Principal - Nº 1</p>
                 </div>
             </div>
         </section>
