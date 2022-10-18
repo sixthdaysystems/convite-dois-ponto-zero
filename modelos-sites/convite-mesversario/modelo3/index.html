@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Mesversário 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, #6f42c1, #d63384, #dc3545, #fd7e14);
+        }
+        section{
+            width: 100vw;
+            height: 100vw;
+        }
+        .img-main{
+            object-fit: cover;
+            object-position: center;
+        }
+        @media (orientation:landscape) {
+            section{
+                width: 100vh;
+                height: 100vh;
+            }
+        }
+        #main-top{
+            height: 66%;
+        }
+        #main-bottom{
+            height: 34%;
+        }
+        #text-main{
+            background-image: linear-gradient(to bottom right, #6f42c1, #d63384, #dc3545, #fd7e14);
+        }
+        #text-main p{
+            font-size: 8vw;
+        }
+        @media (orientation:landscape) {
+            #text-main p{
+            font-size: 8vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex justify-content-center align-items-center">
+        <section>
+            <div class="row m-0" id="main-top">
+                <div class="col-5 p-0 h-100">
+                    <div class="h-50"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina1.webp" alt="Foto de bebê"></div>
+                    <div class="h-50"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina2.webp" alt="Foto de bebê"></div>
+                </div>
+                <div class="col-7 p-0 h-100"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina3.webp" alt="Foto de bebê"></div>
+            </div>
+            <div class="row m-0" id="main-bottom">
+                <div class="col-5 p-0 h-100"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina4.webp" alt="Foto de bebê"></div>
+                <div class="col-7 p-0 h-100 border border-2 border-danger rounded" id="text-main">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <p class="m-0 text-light">Mesversário</p>
+                        <p class="m-0 text-light">da Helena</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
