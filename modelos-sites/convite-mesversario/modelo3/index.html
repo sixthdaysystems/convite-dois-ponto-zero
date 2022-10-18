@@ -47,6 +47,98 @@
             font-size: 8vh;
             }
         }
+
+        .focus-in-expand {
+            -webkit-animation: focus-in-expand 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: focus-in-expand 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @-webkit-keyframes focus-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+        }
+        }
+        @keyframes focus-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+        }
+        }
+
+        .scale-in-center {
+            -webkit-animation: scale-in-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: scale-in-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @-webkit-keyframes scale-in-center {
+        0% {
+            -webkit-transform: scale(0);
+                    transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            opacity: 1;
+        }
+        }
+        @keyframes scale-in-center {
+        0% {
+            -webkit-transform: scale(0);
+                    transform: scale(0);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            opacity: 1;
+        }
+        }
+
+        .roll-in-left {
+            -webkit-animation: roll-in-left 3s ease-out both;
+                    animation: roll-in-left 3s ease-out both;
+        }
+
+        @-webkit-keyframes roll-in-left {
+        0% {
+            -webkit-transform: translateX(-800px) rotate(-540deg);
+                    transform: translateX(-800px) rotate(-540deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+                    transform: translateX(0) rotate(0deg);
+            opacity: 1;
+        }
+        }
+        @keyframes roll-in-left {
+        0% {
+            -webkit-transform: translateX(-800px) rotate(-540deg);
+                    transform: translateX(-800px) rotate(-540deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateX(0) rotate(0deg);
+                    transform: translateX(0) rotate(0deg);
+            opacity: 1;
+        }
+        }
     </style>
 </head>
 <body>
@@ -54,17 +146,17 @@
         <section>
             <div class="row m-0" id="main-top">
                 <div class="col-5 p-0 h-100">
-                    <div class="h-50"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina1.webp" alt="Foto de bebê"></div>
-                    <div class="h-50"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina2.webp" alt="Foto de bebê"></div>
+                    <div class="h-50"><img class="w-100 h-100 img-main border border-2 border-danger rounded roll-in-left" src="img/menina1.webp" alt="Foto de bebê"></div>
+                    <div class="h-50"><img class="w-100 h-100 img-main border border-2 border-danger rounded roll-in-left" src="img/menina2.webp" alt="Foto de bebê"></div>
                 </div>
-                <div class="col-7 p-0 h-100"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina3.webp" alt="Foto de bebê"></div>
+                <div class="col-7 p-0 h-100"><img class="w-100 h-100 img-main border border-2 border-danger rounded scale-in-center" src="img/menina3.webp" alt="Foto de bebê"></div>
             </div>
             <div class="row m-0" id="main-bottom">
-                <div class="col-5 p-0 h-100"><img class="w-100 h-100 img-main border border-2 border-danger rounded" src="img/menina4.webp" alt="Foto de bebê"></div>
+                <div class="col-5 p-0 h-100"><img class="w-100 h-100 img-main border border-2 border-danger rounded roll-in-left" src="img/menina4.webp" alt="Foto de bebê"></div>
                 <div class="col-7 p-0 h-100 border border-2 border-danger rounded" id="text-main">
                     <div class="d-flex flex-column align-items-center justify-content-center h-100">
-                        <p class="m-0 text-light">Mesversário</p>
-                        <p class="m-0 text-light">da Helena</p>
+                        <p class="m-0 text-light focus-in-expand">Mesversário</p>
+                        <p class="m-0 text-light focus-in-expand">da Helena</p>
                     </div>
                 </div>
             </div>
