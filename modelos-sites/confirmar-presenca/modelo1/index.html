@@ -20,7 +20,7 @@
         *{
             font-family: 'Roboto', sans-serif;
         }
-        body{
+        #article-presenca-1{
             background: radial-gradient(
             circle farthest-corner at 28% 100%,
             var(--yellow) 0%,
@@ -30,27 +30,23 @@
             transparent 65%
             ),
             linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
-            background-attachment: fixed;
-            background-position: right;
-            background-size: cover;
-            overflow-x: hidden;
         }
-        article{
+        #section-presenca-1{
             width: 100vw;
             height: 100vh;
         }
         @media (orientation: landscape) {
-            article{
+            #section-presenca-1{
                 width: 100vh;
                 height: 100vh;
                 max-width: 768px;
             }
         }
-        p{
+        #whatsapp p{
             font-size: 7vw;
         }
         @media (orientation:landscape) {
-            p{
+            #whatsapp p{
                 font-size: 7vh;
             }
         }
@@ -62,18 +58,20 @@
             color: white;
             text-shadow: 1px 1px 10px white;
         }
-        /*Imagem de <a href="https://pixabay.com/pt/users/image4you-2459255/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1420830">Harry Strauss</a> por <a href="https://pixabay.com/pt//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1420830">Pixabay</a>*/
     </style>
 </head>
 <body>
-    <article class="d-flex align-items-center justify-content-center m-auto">
-        <div id="whatsapp" class="text-center">
-            <div class="col border border-3 rounded-4 p-2">
-                <p>Confirme a presença</p>
-                <p onclick="message()"><a href="#">Aqui</a></p>
+    <article id="article-presenca-1">
+        <section class="d-flex align-items-center justify-content-center m-auto" id="section-presenca-1">
+            <div id="whatsapp" class="text-center">
+                <div class="col border border-3 rounded-4 p-2">
+                    <p>Confirme a presença</p>
+                    <p onclick="message()"><a href="#">Aqui</a></p>
+                </div>
             </div>
-        </div>
+        </section>
     </article>
+
 
     <script>
         function message(){
