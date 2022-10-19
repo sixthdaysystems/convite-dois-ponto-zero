@@ -11,38 +11,40 @@
         *{
             font-family: 'Roboto', sans-serif;
         }
-        body{
-            background-color: #953EFF;
-        }
-        article{
+        #article-localizacao-1{
             width: 100vw;
             height: 100vh;
+            background-color: #953EFF;
+        }
+        #section-localizacao-1{
+            width: 100vw;
+            height: 100vw;
         }
         @media (orientation: landscape) {
-            article{
+            #section-localizacao-1{
                 width: 100vh;
                 height: 100vh;
                 max-width: 768px;
             }
         }
-        #mapa p{
+        #section-localizacao-1 p{
             text-align: center;
-            margin: auto;
             font-size: 3vw;
             color: white;
             text-shadow: 1px 1px 10px white;
+            margin: 0;
         }
-        iframe{
+        #iframe-localizacao-1{
             width: 100vw;
             height: 75vw;
         }
         @media (orientation:landscape){
-            #mapa p{
+            #section-localizacao-1 p{
                 font-size: 3vh;
             }
         }
         @media (orientation: landscape){
-            iframe{
+            #iframe-localizacao-1{
                 width: 100vh;
                 max-width: 768px;
                 height: 75vh;
@@ -51,13 +53,13 @@
     </style>
 </head>
 <body>
-    <article class="d-flex align-items-center justify-content-center m-auto">
-        <div id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60034.987820620896!2d-43.98969534179687!3d-19.874335199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69bd202490ec3%3A0xd2f3b522e87d9121!2sVila%20Verde%20Eventos!5e0!3m2!1spt-BR!2sbr!4v1663858225964!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Vila Verde Eventos</p>
-                <p>Av. Joaquim José Diniz, 455 - Fernão Dias</p>
-                <p>Belo Horizonte - MG</p>
-        </div>
+    <article id="article-localizacao-1" class="d-flex align-items-center justify-content-center">
+        <section class="d-flex align-items-center justify-content-center flex-column" id="section-localizacao-1">
+            <iframe id="iframe-localizacao-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.954140467433!2d-43.21267588504724!3d-22.951915984988936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fd5984aa13f%3A0x9dc984d7019502de!2sCristo%20Redentor!5e0!3m2!1spt-BR!2sbr!4v1666146610868!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Cristo Redentor</p>
+                    <p>Parque Nacional da Tijuca</p>
+                    <p>Alto da Boa Vista, Rio de Janeiro</p>
+        </section>
     </article>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
