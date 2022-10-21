@@ -14,7 +14,7 @@
         main{
             width: 100vw;
             height: 100vh;
-            background-color: silver;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.400) , silver , rgba(0, 0, 0, 0.400));
         }
         section{
             width: 100vw;
@@ -28,9 +28,6 @@
         }
         #titulo-main p{
             font-size: 8vw;
-        }
-        #photo{
-            background-image: url(img/);
         }
         #photo-main{
             object-fit: contain;
@@ -335,11 +332,11 @@
 <body>
     <main class="d-flex justify-content-center align-items-center">
         <section>
-            <div class="h-25 w-75 m-auto d-flex flex-column justify-content-center align-items-center" id="titulo-main">
+            <div class="h-25 d-flex flex-column justify-content-center align-items-center" id="titulo-main">
                 <p class="m-0 text-flicker-in-glow">Save the Date</p>
                 <p class="m-0 text-flicker-in-glow">01.01.23</p>
             </div>
-            <div class="h-75 overflow-hidden" id="photo"><img class="w-100 h-100 kenburns-bottom" id="photo-main" src="img/virginia.webp" alt="Selfie"></div>
+            <div class="h-75 overflow-hidden"><img class="w-100 h-100 kenburns-bottom" id="photo-main" src="img/virginia.webp" alt="Selfie"></div>
         </section>
     </main>
 
