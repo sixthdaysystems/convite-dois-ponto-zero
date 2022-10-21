@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Criança 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+        section{
+            width: 100vw;
+            height: 100vw;
+        }
+        @media (orientation:landscape) {
+            section{
+                width: 100vh;
+                height: 100vh;
+            }
+        }
+        #number3{
+            top: 50vh;
+            left: -12.5vw;
+            animation-name: numeros;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+        }
+        #number2{
+            top: 50vh;
+            left: -12.5vw;
+            animation-name: numeros;
+            animation-duration: 4s;
+            animation-delay: 4s;
+            animation-timing-function: ease-in;
+        }
+        #number1{
+            top: 50vh;
+            left: -12.5vw;
+            animation-name: numeros;
+            animation-duration: 4s;
+            animation-delay: 7s;
+            animation-timing-function: ease-in;
+        }
+        @keyframes numeros {
+            0%{
+                left: -12.5vw;
+            }
+            100%{
+                left: 112.5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex justify-content-center align-items-center">
+        <section></section>
+    </main>
+
+    <div class="position-absolute translate-middle w-25" id="number3"><img class="w-100" src="img/3-circle.svg" alt="3"></div>
+
+    <div class="position-absolute translate-middle w-25" id="number2"><img class="w-100" src="img/2-circle.svg" alt="2"></div>
+
+    <div class="position-absolute translate-middle w-25" id="number1"><img class="w-100" src="img/1-circle.svg" alt="1"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
