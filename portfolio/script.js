@@ -55,5 +55,21 @@ function iframeModelo3(){
         document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/1";
     }else if (document.getElementById('select-modelo-3').value == '2') {
         document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/2";
-    }
-}
+    }else if (document.getElementById('select-modelo-3').value == '3') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/3";
+    }else if (document.getElementById('select-modelo-3').value == '4') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/4";
+    }else if (document.getElementById('select-modelo-3').value == '5') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/5";
+    }else if (document.getElementById('select-modelo-3').value == '6') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/6";
+    }else if (document.getElementById('select-modelo-3').value == '7') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/7";
+    }else if (document.getElementById('select-modelo-3').value == '8') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/8";
+    }else if (document.getElementById('select-modelo-3').value == '9') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/9";
+    }else if (document.getElementById('select-modelo-3').value == '10') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/10";
+    };
+};
