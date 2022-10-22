@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação do Texto</title>
+    <style>
+        html{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .text-focus-in{animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+        @keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+    </style>
+</head>
+<body>
+    <main class="container d-flex justify-content-center align-items-center">
+        <h1 class="m-0 text-focus-in">Aniversário</h1>
+    </main>
+</body>
+</html>

@@ -23,6 +23,8 @@ function iframeModelo1(){
         document.getElementById('modelo-site1').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo1/foto-alto-pequena";
     }else if (document.getElementById('select-modelo-1').value == '12') {
         document.getElementById('modelo-site1').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo1/foto-embaixo-pequena";
+    }else {
+        document.getElementById('modelo-site1').src="";
     };
 };
 
@@ -47,6 +49,8 @@ function iframeModelo2(){
         document.getElementById('modelo-site2').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo2/9";
     }else if (document.getElementById('select-modelo-2').value == '10') {
         document.getElementById('modelo-site2').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo2/10";
+    }else {
+        document.getElementById('modelo-site2').src="";
     };
 }
 
@@ -71,5 +75,25 @@ function iframeModelo3(){
         document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/9";
     }else if (document.getElementById('select-modelo-3').value == '10') {
         document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/10";
+    }else {
+        document.getElementById('modelo-site3').src="";
     };
 };
+
+function iframeModelo4(){
+    if (document.getElementById('select-modelo-4').value == '1') {
+        document.getElementById('modelo-site4').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo4/1";
+    }else if (document.getElementById('select-modelo-4').value == '2') {
+        document.getElementById('modelo-site4').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo4/2";
+    }else if (document.getElementById('select-modelo-4').value == '3') {
+        document.getElementById('modelo-site4').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo4/3";
+    }else if (document.getElementById('select-modelo-4').value == '4') {
+        document.getElementById('modelo-site4').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo4/4";
+    }else if (document.getElementById('select-modelo-4').value == '5') {
+        document.getElementById('modelo-site4').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo4/5";
+    }else if (document.getElementById('select-modelo-4').value == '6') {
+        document.getElementById('modelo-site4').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo4/6";
+    }else {
+        document.getElementById('modelo-site4').src="";
+    }
+}
