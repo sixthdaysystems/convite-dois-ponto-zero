@@ -17,5 +17,7 @@ function iframeModelo1(){
         document.getElementById('modelo-site1').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo1/foto-embaixo-media";
     }else if (document.getElementById('select-modelo-1').value == '9') {
         document.getElementById('modelo-site1').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo1/foto-esquerda-pequena";
+    }else if (document.getElementById('select-modelo-1').value == '10') {
+        document.getElementById('modelo-site1').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo1/foto-direita-pequena";
     }
 };
