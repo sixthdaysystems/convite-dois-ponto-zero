@@ -53,5 +53,7 @@ function iframeModelo2(){
 function iframeModelo3(){
     if (document.getElementById('select-modelo-3').value == '1') {
         document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/1";
+    }else if (document.getElementById('select-modelo-3').value == '2') {
+        document.getElementById('modelo-site3').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo3/2";
     }
 }
