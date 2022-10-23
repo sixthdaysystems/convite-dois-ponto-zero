@@ -111,3 +111,13 @@ function iframeModelo21(){
         document.getElementById('modelo-site21').src="";
     }
 }
+
+function iframeModelo31(){
+    if (document.getElementById('select-modelo-31').value == '1'){
+        document.getElementById('modelo-site31').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/video-parabens/modelo1/1";
+    }else if (document.getElementById('select-modelo-31').value == '2'){
+        document.getElementById('modelo-site31').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/video-parabens/modelo1/2";
+    }else {
+        document.getElementById('modelo-site31').src="";
+    }
+}
