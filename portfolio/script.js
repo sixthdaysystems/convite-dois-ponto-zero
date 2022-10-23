@@ -103,5 +103,11 @@ function iframeModelo21(){
         document.getElementById('modelo-site21').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/exemplo-convite/modelo1/1";
     }else if (document.getElementById('select-modelo-21').value == '2'){
         document.getElementById('modelo-site21').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/exemplo-convite/modelo1/2";
+    }else if (document.getElementById('select-modelo-21').value == '3'){
+        document.getElementById('modelo-site21').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/exemplo-convite/modelo1/3";
+    }else if (document.getElementById('select-modelo-21').value == '4'){
+        document.getElementById('modelo-site21').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/exemplo-convite/modelo1/4";
+    }else {
+        document.getElementById('modelo-site21').src="";
     }
 }
