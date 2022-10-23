@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo de Parabéns 1</title>
+    <title>Modelo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
-    article{
-        width: 100vw;
-        height: 100vh;
-    }
-    section{
-        width: 100vw;
-        height: 100vw;
-    }
-    @media (orientation: landscape){
-        section{
-            width: 100vh;
+        article{
+            width: 100vw;
             height: 100vh;
         }
-    }
-    body{
-        background-color: black;
-    }
+        section{
+            width: 100vw;
+            height: 100vw;
+            max-width: 425px;
+        }
+        @media (orientation:landscape) {
+            section{
+                width: 100vh;
+                height: 100vh;
+            }
+        }
     </style>
 </head>
 <body>
     <article class="d-flex justify-content-center align-items-center bg-dark">
-        <section class="d-flex justify-content-center align-items-center">
-            <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8cBwp040uas?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="carousel" class="carousel slide d-flex justify-content-center align-items-center" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/foto1.webp" class="d-block w-100" alt="Selfie">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto2.webp" class="d-block w-100" alt="Selfie">
+                </div>
             </div>
         </section>
     </article>

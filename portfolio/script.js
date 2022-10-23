@@ -121,3 +121,19 @@ function iframeModelo31(){
         document.getElementById('modelo-site31').src="";
     }
 }
+
+function iframeModelo41(){
+    if (document.getElementById('select-modelo-41').value == '1'){
+        document.getElementById('modelo-site41').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/carrossel-de-imagens/modelo1/1";
+    }else if (document.getElementById('select-modelo-41').value == '2'){
+        document.getElementById('modelo-site41').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/carrossel-de-imagens/modelo1/2";
+    }else if (document.getElementById('select-modelo-41').value == '3'){
+        document.getElementById('modelo-site41').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/carrossel-de-imagens/modelo1/3";
+    }else if (document.getElementById('select-modelo-41').value == '4'){
+        document.getElementById('modelo-site41').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/carrossel-de-imagens/modelo1/4";
+    }else if (document.getElementById('select-modelo-41').value == '5'){
+        document.getElementById('modelo-site41').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/carrossel-de-imagens/modelo1/5";
+    }else {
+        document.getElementById('modelo-site41').src="";
+    }
+}
