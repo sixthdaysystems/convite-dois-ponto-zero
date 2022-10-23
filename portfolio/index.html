@@ -13,9 +13,6 @@
             font-family: 'Roboto', sans-serif;
             box-sizing: border-box;
         }
-        body{
-            background-color: black;
-        }
         .width264{
             max-width: 264px;
             max-height: 151px;
@@ -27,17 +24,18 @@
             font-size: 14px;
         }
         .title-gradient{
-            background-image: linear-gradient(to bottom, #dc3545, rgba(33, 37, 41, 0.100));
+            background-image: linear-gradient(to bottom, #dc3545, #212529);
+            color: white;
         }
         .select-tamanho{
             width: 244px;
         }
     </style>
 </head>
-<body class="text-light">
-    <nav class="navbar navbar-dark ">
+<body>
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <button class="btn btn-outline-light" type="button" data-bs-toggle="modal" data-bs-target="#convite2">CONVITE 2.0</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#convite2">CONVITE 2.0</button>
             <div class="modal fade" id="convite2" tabindex="-1" aria-labelledby="conviteh1" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -96,10 +94,10 @@
         <div class="title-gradient ps-2">
             <p class="m-0 text-center">Design dos Modelos</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto">
+        <div class="row m-0 flex-nowrap overflow-auto bg-dark">
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" id="modelo-site11" src=""></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" id="modelo-site11" src=""></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-11" id="select-modelo-11" onchange="iframeModelo11()">
                     <option selected>Formato do Convite</option>
@@ -120,7 +118,7 @@
 
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" id="modelo-site12" src=""></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" id="modelo-site12" src=""></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-12" id="select-modelo-12" onchange="iframeModelo12()">
                     <option selected>Fonte do Convite</option>
@@ -139,7 +137,7 @@
 
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" id="modelo-site13" src=""></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" id="modelo-site13" src=""></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-13" id="select-modelo-13" onchange="iframeModelo13()">
                     <option selected>Animação da Foto</option>
@@ -158,7 +156,7 @@
 
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" id="modelo-site14" src=""></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" id="modelo-site14" src=""></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-14" id="select-modelo-14" onchange="iframeModelo14()">
                     <option selected>Animação do Texto</option>
@@ -177,10 +175,10 @@
         <div class="title-gradient ps-2">
             <p class="m-0 text-center">Exemplo de Convite</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto">
+        <div class="row m-0 flex-nowrap overflow-auto bg-dark">
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" id="modelo-site21" src=""></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" id="modelo-site21" src=""></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-21" id="select-modelo-21" onchange="iframeModelo21()">
                     <option selected>Modelos</option>
@@ -197,10 +195,10 @@
         <div class="title-gradient ps-2">
             <p class="m-0 text-center">Vídeo de Parabéns</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto">
+        <div class="row m-0 flex-nowrap overflow-auto bg-dark">
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" src="" id="modelo-site31" frameborder="0"></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" src="" id="modelo-site31" frameborder="0"></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-31" id="select-modelo-31" onchange="iframeModelo31()">
                     <option selected>Criança</option>
@@ -215,10 +213,10 @@
         <div class="title-gradient ps-2">
             <p class="m-0 text-center">Carrossel de Imagens</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto">
+        <div class="row m-0 flex-nowrap overflow-auto bg-dark">
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" src="" id="modelo-site41" frameborder="0"></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" src="" id="modelo-site41" frameborder="0"></iframe>
                 </div>
                 <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-41" id="select-modelo-41" onchange="iframeModelo41()">
                     <option selected>Modelos</option>
@@ -236,32 +234,15 @@
         <div class="title-gradient ps-2">
             <p class="m-0 text-center">Localização</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto">
+        <div class="row m-0 flex-nowrap overflow-auto bg-dark">
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" src="../modelos-sites/localizacao/modelo1/index.html" frameborder="0"></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" src="" id="modelo-site51" frameborder="0"></iframe>
                 </div>
-                <button type="button" class="btn btn-dark mx-2 mb-2" data-bs-toggle="modal" data-bs-target="#lo1">
-                    Mapa
-                </button>
-                <div class="modal fade" id="lo1" tabindex="-1" aria-labelledby="loh1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header bg-dark text-light">
-                                <h1 class="modal-title fs-5" id="loh1">Localização da Lia</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body bg-dark text-light">
-                                <p>Estilo 15 anos</p>
-                                <p>Mapa que abre no Google Maps e endereço embaixo.</p>
-                            </div>
-                            <div class="modal-footer bg-dark text-light">
-                                <a href="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/localizacao/modelo1/index"><button type="button" class="btn btn-primary">Ver modelo</button></a>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <select class="form-select select-tamanho ms-2 mb-2" name="select-modelo-51" id="select-modelo-51" onchange="iframeModelo51()">
+                    <option selected>Modelos</option>
+                    <option value="1">1</option>
+                </select>
             </div>
         </div>
     </div>
@@ -270,10 +251,10 @@
         <div class="title-gradient ps-2">
             <p class="m-0 text-center">Confirmar Presença</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto">
+        <div class="row m-0 flex-nowrap overflow-auto bg-dark">
             <div class="d-flex flex-column p-0 widthIframe">
                 <div class="embed-responsive pt-2 px-2">
-                    <iframe class="width264 embed-responsive-item border w-100" src="../modelos-sites/confirmar-presenca/modelo1/index.html" frameborder="0"></iframe>
+                    <iframe class="width264 embed-responsive-item border w-100 bg-light" src="../modelos-sites/confirmar-presenca/modelo1/index.html" frameborder="0"></iframe>
                 </div>
                 <button type="button" class="btn btn-dark mx-2 mb-2" data-bs-toggle="modal" data-bs-target="#cp1">
                     Link Whatsapp
@@ -300,7 +281,7 @@
         </div>
     </div>
 
-    <footer class="container-fluid text-white text-center mb-1">
+    <footer class="container-fluid text-white text-center pb-1 bg-dark">
         <hr class="m-0"><p class="mb-0">&lt;Sexto Dia Sistemas&gt;</p>
         <p class="mb-0">&lt;/Construção de Sistemas e Sites - <a href="https://www.instagram.com/claudiomarquesprogramador/">Contato</a>&gt;</p>
     </footer>
