@@ -7,71 +7,54 @@
     <title>Confirmar Presença</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
-        :root {
-            --white: #fff;
-            --blue: #3051f1;
-            --purple: #c92bb7;
-            --red: #f73344;
-            --orange: #fa8e37;
-            --yellow: #fcdf8f;
-            --yellow_to: #fbd377;
-        }
         @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
         *{
             font-family: 'Cinzel', serif;
         }
-        #article-presenca-1{
-            background: radial-gradient(
-            circle farthest-corner at 28% 100%,
-            var(--yellow) 0%,
-            var(--yellow_to) 10%,
-            var(--orange) 22%,
-            var(--red) 35%,
-            transparent 65%
-            ),
-            linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
-        }
-        #section-presenca-1{
+        article{
             width: 100vw;
             height: 100vh;
         }
-        @media (orientation: landscape) {
-            #section-presenca-1{
-                width: 100vh;
-                height: 100vh;
-                max-width: 768px;
-            }
+        section{
+            width: 100vw;
+            height: 100vw;
+            background-color: skyblue;
         }
         #whatsapp p{
-            font-size: 7vw;
+            font-size: 4vw;
+            font-weight: bold;
+            margin-bottom: 4px;
         }
-        @media (orientation:landscape) {
+        @media (min-width:320px){
             #whatsapp p{
-                font-size: 7vh;
+                font-size: 6vw;
+                margin-bottom: 20px;
             }
         }
-        #whatsapp p, a{
-            color: white;
-            text-shadow: 1px 1px 1px black;
+        @media (orientation:landscape) {
+            section{
+                width: 100vh;
+                height: 100vh;
+            }
         }
-        #whatsapp a{
-            color: white;
-            text-shadow: 1px 1px 10px white;
+        @media (orientation:landscape) and (min-width:320px) {
+            #whatsapp p{
+                font-size: 6vh;
+            }
         }
     </style>
 </head>
 <body>
-    <article id="article-presenca-1">
-        <section class="d-flex align-items-center justify-content-center m-auto" id="section-presenca-1">
+    <article class="d-flex align-items-center justify-content-center bg-dark">
+        <section class="d-flex align-items-center justify-content-center m-auto">
             <div id="whatsapp" class="text-center">
-                <div class="col border border-3 rounded-4 p-2">
+                <div class="col border border-dark border-3 rounded-4 p-2">
                     <p>Confirme a presença</p>
                     <p onclick="message()"><a href="#">Aqui</a></p>
                 </div>
             </div>
         </section>
     </article>
-
 
     <script>
         function message(){

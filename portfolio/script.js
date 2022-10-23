@@ -145,3 +145,11 @@ function iframeModelo51(){
         document.getElementById('modelo-site51').src="";
     }
 }
+
+function iframeModelo61(){
+    if (document.getElementById('select-modelo-61').value == '1'){
+        document.getElementById('modelo-site61').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/confirmar-presenca/modelo1/1";
+    }else {
+        document.getElementById('modelo-site61').src="";
+    }
+}
