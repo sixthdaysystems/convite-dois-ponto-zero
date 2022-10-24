@@ -31,17 +31,20 @@
             width: 100%;
             height: 100%;
         }
+        form{
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 <body>
     <article class="d-flex justify-content-center align-items-center bg-dark">
         <section class="d-flex justify-content-center align-items-center flex-column bg-success">
-            <form class="px-2">
-                <label for="">Endereço</label>
-                <input class="form-control mb-1" type="text" name="endereco" id="endereco" placeholder="Parque Nacional da Tijuca" readonly="true">
+            <form class="px-2 mb-1 rounded">
+                <label class="texto-mapa" for="">Endereço:</label>
+                <input class="form-control mb-1 texto-mapa" type="text" name="endereco" id="endereco" placeholder="Parque Nacional da Tijuca" readonly="true">
                 <input class="texto-mapa form-control w-auto mb-1" type="button" id="copiar" value="Copiar endereço">
             </form>
-            <a class="btn btn-primary me-auto ms-2" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">Abrir Mapa</a>
+            <a class="btn btn-primary ms-2 texto-mapa" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">Abrir Mapa</a>
         </section>
     </article>
 
