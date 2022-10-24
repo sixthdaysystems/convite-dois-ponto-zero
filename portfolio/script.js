@@ -101,6 +101,10 @@ function iframeModelo14(){
 function iframeModelo15(){
     if (document.getElementById('select-modelo-15').value == '1') {
         document.getElementById('modelo-site15').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo5/1";
+    }else if (document.getElementById('select-modelo-15').value == '2') {
+        document.getElementById('modelo-site15').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/design-convite/modelo5/2";
+    }else {
+        document.getElementById('modelo-site15').src="";
     }
 }
 
