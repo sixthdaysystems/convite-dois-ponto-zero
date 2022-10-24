@@ -151,6 +151,8 @@ function iframeModelo41(){
 function iframeModelo51(){
     if (document.getElementById('select-modelo-51').value == '1'){
         document.getElementById('modelo-site51').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/localizacao/modelo1/1";
+    }else if (document.getElementById('select-modelo-51').value == '2'){
+        document.getElementById('modelo-site51').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/localizacao/modelo1/2";
     }else {
         document.getElementById('modelo-site51').src="";
     }
