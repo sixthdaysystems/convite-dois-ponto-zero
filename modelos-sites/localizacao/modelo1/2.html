@@ -35,18 +35,22 @@
 </head>
 <body>
     <article class="d-flex justify-content-center align-items-center bg-dark">
-        <section class="d-flex justify-content-center align-items-center flex-column bg-success gap-1">
-            <span class="input-group-text texto-mapa" id="endereco">Parque Nacional da Tijuca</span>
-            <button class="btn btn-light texto-mapa" onclick="copiarEndereco()">Copiar endereço</button>
-            <a class="btn btn-primary texto-mapa" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">Abrir Mapa</a>
+        <section class="d-flex justify-content-center align-items-center flex-column bg-success">
+            <form class="px-2">
+                <label for="">Endereço</label>
+                <input class="form-control mb-1" type="text" name="endereco" id="endereco" placeholder="Parque Nacional da Tijuca" readonly="true">
+                <input class="texto-mapa form-control w-auto mb-1" type="button" id="copiar" value="Copiar endereço">
+            </form>
+            <a class="btn btn-primary me-auto ms-2" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">Abrir Mapa</a>
         </section>
     </article>
 
     <script>
+        document.getElementById("copiar").addEventListener('click', copiarEndereco);
         function copiarEndereco(){
-            let textoCopiado = document.getElementById('endereco');
-            document.execCommand("copy");
-            alert("Endereço copiado : " + textoCopiado.textContent);
+            let text = document.getElementById("endereco").placeholder;
+            navigator.clipboard.writeText(text);
+            console.log(document.getElementById("endereco").placeholder)
         }
     </script>
 
