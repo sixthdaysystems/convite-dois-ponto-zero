@@ -7,6 +7,7 @@
     <title>Modelo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
         main{
             width: 100vw;
             height: 100vh;
@@ -15,6 +16,10 @@
             width: 100vw;
             height: 100vw;
             font-size: 5vw;
+            background-color: bisque;
+            background-image: linear-gradient(to bottom, antiquewhite, bisque);
+            color: darkgreen;
+            font-family: 'Bungee', cursive;
         }
         @media (orientation:landscape) {
             section{
@@ -31,8 +36,8 @@
 </head>
 <body>
     <main class="d-flex justify-content-center align-items-center bg-dark">
-        <section class="d-flex justify-content-center align-items-center flex-column bg-light">
-            <div class="w-50 h-50 d-flex justify-content-center align-items-center" id="foto-main"></div>
+        <section class="d-flex justify-content-center align-items-center flex-column">
+            <div class="w-50 h-50 d-flex justify-content-center align-items-center rounded" id="foto-main"></div>
             <div class="w-100 h-50 d-flex justify-content-center align-items-center">
                 <div class="w-75 h-75 d-flex text-center align-items-center">Aniversário da Ana - 01/01/23 - 18h - Rua Principal nº 1 - (12) 12345-6789</div>
             </div>
