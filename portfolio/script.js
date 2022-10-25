@@ -126,6 +126,14 @@ function iframeModelo21(){
     }
 }
 
+function iframeModelo22(){
+    if (document.getElementById('select-modelo-22').value == '1'){
+        document.getElementById('modelo-site22').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/exemplo-convite/completo/1";
+    }else {
+        document.getElementById('modelo-site22').src="";
+    }
+}
+
 function iframeModelo31(){
     if (document.getElementById('select-modelo-31').value == '1'){
         document.getElementById('modelo-site31').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/video-parabens/modelo1/1";
