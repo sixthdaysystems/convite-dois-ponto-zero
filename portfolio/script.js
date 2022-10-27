@@ -148,6 +148,10 @@ function iframeModelo23(){
     }
 }
 
+function iframeModelo24(){
+    document.getElementById('modelo-site24').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/exemplo-convite/links";
+}
+
 function iframeModelo31(){
     if (document.getElementById('select-modelo-31').value == '1'){
         document.getElementById('modelo-site31').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/modelos-sites/video-parabens/modelo1/1";
