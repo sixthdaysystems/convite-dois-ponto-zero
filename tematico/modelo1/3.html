@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festa do Gael</title>
+    <title>Manuela Pool Party</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
@@ -16,33 +16,51 @@
             width: 100vw;
             height: 100vh;
             background-image: url(img/background.webp);
-            background-size: cover;
+            background-size: 125% 125%;
         }
         .texto{
             font-size: 6vw;
         }
         #nome{
-            font-size: 10vw;
+            font-size: 9vw;
             color: #FF4242;
         }
         #selfie{
-            background: center url(img/foto-gael.webp);
+            background: center url(img/foto-vertical.webp);
             background-size: cover;
         }
+        .figura{
+            position: absolute;
+            transform: translateX(-50%);
+            height: 100%;
+            width: auto;
+        }
+        #slide-img > * {
+            visibility: hidden;
+            animation: 12s autoplay1 infinite;
+        }
+        @keyframes autoplay1 {
+            0% {visibility: visible}
+            33.33% {visibility: hidden}
+        }
+        #slide-img > *:nth-child(1) {animation-delay: 0s}
+        #slide-img > *:nth-child(2) {animation-delay: 4s}
+        #slide-img > *:nth-child(3) {animation-delay: 8s}
+
         @media (orientation:landscape) {
             main{
-                background-size: contain;
+                background-size: cover;
             }
             .texto{
                 font-size: 6vh;
             }
             #nome{
-                font-size: 10vh;
+                font-size: 9vh;
             }
         }
         @media (min-width:768px) and (min-height:500px) {
             #nome{
-                font-size: 70px;
+                font-size: 60px;
             }
             .texto{
                 font-size: 40px;
@@ -61,14 +79,14 @@
         <div class="h-50 w-50 d-flex m-auto mt-1 border border-dark border-2" id="selfie">
         </div>
         <div class="h-25 d-flex flex-column justify-content-center align-content-stretch">
-            <p class="h-50 d-flex align-items-center justify-content-center m-0" id="nome">Festa do Gael</p>
+            <p class="h-50 d-flex align-items-center justify-content-center m-0" id="nome">Manuela Pool Party</p>
             <p class="h-25 d-flex justify-content-center align-items-center m-0 texto">sábado, 01 de janeiro às 18h</p>
             <p class="h-25 d-flex justify-content-center align-items-center m-0 texto"><a href="#" onclick="message()">confirmar presença</a>&nbsp;-&nbsp;<a href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">local</a></p>
         </div>
-        <div class="h-25 d-flex flex-row overflow-hidden" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent)">
-            <div class="h-100 col-4 d-flex justify-content-end"><img class="h-100 mw-100" id="figura1" src="img/Flork.png" alt="Flork" onclick="pular1()"></div>
-            <div class="h-100 col-4 d-flex justify-content-center"><img class="h-100 flip-vertical-right mw-100" src="img/flork-esquerda.png" alt="Flork"></div>
-            <div class="h-100 col-4 d-flex justify-content-start"><img class="h-100 mw-100" id="figura2" src="img/flork-direita.png" alt="Flork" onclick="pular2()"></div>
+        <div class="h-25 w-100 d-flex justify-content-center align-items-end" id="slide-img" style="position: relative">
+            <div class="h-100 w-auto"><img class="figura" src="img/flork-png-034.png" alt="Flork"></div>
+            <div class="h-100"><img class="figura" src="img/flork-png-035.png" alt="Flork"></div>
+            <div class="h-100"><img class="figura" src="img/flork-png-036.png" alt="Flork"></div>
         </div>
     </main>
 
