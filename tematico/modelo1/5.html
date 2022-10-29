@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        main{
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            background-image: url(img/bolinhas-background-_1_.webp);
+            background-size: cover;
+        }
+        article{
+            width: 80vw;
+            height: 40vh;
+            overflow: hidden;
+        }
+        img{
+            object-fit: cover;
+        }
+        h1{
+            font-family: 'Patua One', cursive;
+        }
+        p{
+            font-family: 'Itim', cursive;
+        }
+        @media (orientation:landscape) {
+            main{
+                flex-direction: row;
+            }
+            article{
+                width: 40vw;
+                height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex justify-content-evenly align-items-center">
+        <article class="d-flex justify-content-center align-items-center">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/bebe-quadrado.webp" class="d-block w-100" alt="Foto" style="transform: scaleX(-1);">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/flork-bolo.png" class="d-block w-100 p-3" alt="Flork">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="d-flex justify-content-center align-items-center flex-column">
+            <h1 class="m-auto">Festa da Sophia</h1>
+            <h1 class="m-auto">2 anos</h1>
+            <p class="m-auto">sábado, 01 de janeiro às 18h</p>
+            <p class="m-auto" style="text-decoration: underline;">confirmar presença - local</p>
+        </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
