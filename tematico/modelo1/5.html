@@ -26,9 +26,11 @@
         }
         h1{
             font-family: 'Patua One', cursive;
+            font-size: 20vw;
         }
         p{
             font-family: 'Itim', cursive;
+            font-size: 5.6vw;
         }
         @media (orientation:landscape) {
             main{
@@ -38,28 +40,26 @@
                 width: 40vw;
                 height: 80vh;
             }
+            p{
+                font-size: 5.6vh;
+            }
+            h1{
+                font-size: 20vh;
+            }
         }
     </style>
 </head>
 <body>
     <main class="d-flex justify-content-evenly align-items-center">
         <article class="d-flex justify-content-center align-items-center">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/bebe-quadrado.webp" class="d-block w-100" alt="Foto" style="transform: scaleX(-1);">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/flork-bolo.png" class="d-block w-100 p-3" alt="Flork">
-                    </div>
-                </div>
-            </div>
+            <img class="w-100 h-100" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);">
         </article>
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <h1 class="m-auto">Festa da Sophia</h1>
-            <h1 class="m-auto">2 anos</h1>
-            <p class="m-auto">sábado, 01 de janeiro às 18h</p>
-            <p class="m-auto" style="text-decoration: underline;">confirmar presença - local</p>
+            <p class="m-0">Festa da</p>
+            <h1 class="m-auto">Sophia</h1>
+            <p class="m-0">2 anos</p>
+            <p class="m-0">sábado, 01 de janeiro às 18h</p>
+            <p class="m-0" style="text-decoration: underline;">confirmar presença - local</p>
         </article>
     </main>
 
