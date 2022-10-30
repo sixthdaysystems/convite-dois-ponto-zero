@@ -13,16 +13,14 @@
             width: 100vw;
             height: 100vh;
             flex-direction: column;
-            background-image: url(img/bolinhas-background-_1_.webp);
-            background-size: cover;
         }
         article{
-            width: 80vw;
-            height: 40vh;
+            width: 100vw;
+            height: 50vh;
             overflow: hidden;
         }
         img{
-            object-fit: cover;
+            object-fit: contain;
         }
         h1{
             font-family: 'Patua One', cursive;
@@ -30,18 +28,18 @@
         }
         p{
             font-family: 'Itim', cursive;
-            font-size: 5vw;
+            font-size: 8vw;
         }
         @media (orientation:landscape) {
             main{
                 flex-direction: row;
             }
             article{
-                width: 40vw;
-                height: 80vh;
+                width: 50vw;
+                height: 100vh;
             }
             p{
-                font-size: 5vh;
+                font-size: 8vh;
             }
             h1{
                 font-size: 17vh;
@@ -51,14 +49,32 @@
 </head>
 <body>
     <main class="d-flex justify-content-evenly align-items-center">
-        <article class="d-flex justify-content-center align-items-center">
-            <img class="w-100 h-100" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);">
+        <article class="d-flex justify-content-center align-items-center flex-column">
+            <div class="w-100 h-25 btn-group bg-danger" role="group" aria-label="Basic example">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Data</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Local</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Confirmar Presença</button>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    01/01/23
+                </div>
+            </div>
+            <div class="w-100 h-50">
+                <img class="w-100 h-100 pt-1" src="img/flork-bolo.png" alt="Foto">
+            </div>
+            <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
+                <p class="">VEM QUE VAI TER BOLO</p>
+            </div>
         </article>
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <h1 class="m-auto">Sophia</h1>
-            <p class="m-0">2 anos</p>
-            <p class="m-0">sábado, 01 de janeiro às 18h</p>
-            <p class="m-0" style="text-decoration: underline;">confirmar presença - local</p>
+            <div class="w-100 h-75 bg-light">
+                <img class="w-100 h-100 px-3" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);">
+            </div>
+            <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
+                <p class="m-0">Sophia</p>
+                <p class="m-0">2 anos</p>
+            </div>
         </article>
     </main>
 
