@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        main{
+            width: 100vw;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #e5e5f7;
+            background-image:  radial-gradient(#000 0.5px, transparent 0.5px), radial-gradient(#000 0.5px, #e5e5f7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+        }
+        article{
+            width: 100vw;
+            height: 50vh;
+        }
+        p{
+            font-size: 5.5vw;
+            font-family: 'Itim', cursive;
+        }
+        h1{
+            font-size: 25vw;
+            font-family: 'Patua One', cursive;
+        }
+        @media (orientation:landscape) {
+            main{
+                flex-direction: row;
+            }
+            article{
+                width: 50vw;
+                height: 100vh;
+            }
+            p{
+                font-size: 5.5vh;
+            }
+            h1{
+                font-size: 25vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="d-flex">
+        <article class="d-flex flex-column">
+            <div class="d-flex justify-content-center align-items-end" style="height: 34%;">
+                <p style="background-color: #e5e5f7;">REPI BIRDEI TU MI</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
+                <h1 class="px-2 rounded" style="color:#FF4242;background-color: #212529;">MAISA</h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 33%;">
+                <p class="m-auto" style="background-color: #e5e5f7;">20 ANOS</p>
+                <p class="m-auto px-2 rounded" style="color:#FF4242;background-color: #212529;">SÁBADO, 01 DE JANEIRO ÀS 18H</p>
+            </div>
+        </article>
+        <article class="d-flex flex-column">
+            <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
+                <p style="background-color: #e5e5f7;"><a class="text-dark" style="text-decoration: none;" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">RUA PRINCIPAL Nº 1</a></p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center" style="height: 67%;">
+                <img class="h-100" src="img/flork-direita.png" alt="">
+                <div></div>
+            </div>
+        </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
