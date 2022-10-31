@@ -23,18 +23,13 @@
             height: 50vh;
             overflow: hidden;
         }
-        img{
-            object-fit: contain;
-        }
         h1{
             font-family: 'Patua One', cursive;
             font-size: 10vw;
-            margin: 5px;
         }
         p{
             font-family: 'Itim', cursive;
             font-size: 7vw;
-            margin: 5px;
             text-shadow: 0px 0px 5px white;
         }
         @media (orientation:landscape) {
@@ -58,23 +53,25 @@
 <body>
     <main class="d-flex justify-content-center align-items-center">
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <div class="w-100 h-50 mb-2">
-                <img class="w-100 h-100" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);">
+            <div class="w-100 h-50 d-flex justify-content-center">
+                <img class="w-75 h-100" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);object-fit: cover;">
             </div>
-            <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
-                <h1 class="">Festa da Sophia</h1>
-                <p>-2 anos-</p>
+            <div class="w-100 h-50 d-flex justify-content-around align-items-center flex-column">
+                <button class="btn btn-dark btn-lg">Sophia</button>
+                <button class="btn btn-dark btn-sm">2 anos</button>
+                <button class="btn btn-dark btn-sm">Rua: Principal nº 1</button>
             </div>
         </article>
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
-                <p class="d-flex">VEM QUE VAI TER BOLO</p>
+            <div class="w-100 h-50 d-flex justify-content-around align-items-center flex-column">
+                <button class="btn btn-dark btn-sm">sábado</button>
+                <button class="btn btn-dark btn-sm">01 de janeiro às 18h</button>
+                <button class="btn btn-dark btn-sm">confirmar presença</button>
             </div>
-            <div class="w-100 h-25">
-                <img class="w-100 h-100" src="img/flork-bolo.png" alt="Foto">
+            <div class="w-100 h-50 d-flex align-items-center flex-row">
+                <img class="w-50 h-75 d-flex" src="img/flork-bolo.png" style="object-fit: contain;" alt="Foto">
+                <p class="m-0 d-flex w-50 h-100 align-items-center text-center" style="text-decoration: underline;">VEM QUE VAI TER BOLO</p>
             </div>
-            <div class="h-25 d-flex align-items-end"><p>sábado, 01 de janeiro às 18h</p></div>
-            <div class="h-25 d-flex align-items-start"><p>confirmar presença</p></div>
         </article>
     </main>
 
