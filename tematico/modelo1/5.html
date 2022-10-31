@@ -13,6 +13,8 @@
             width: 100vw;
             height: 100vh;
             flex-direction: column;
+            background-image: url(img/estrelas-com-fundo-sunburst_53876-93178.webp);
+            background-size: cover;
         }
         article{
             width: 100vw;
@@ -24,11 +26,13 @@
         }
         h1{
             font-family: 'Patua One', cursive;
-            font-size: 17vw;
+            font-size: 10vw;
+            margin: 5px;
         }
         p{
             font-family: 'Itim', cursive;
-            font-size: 8vw;
+            font-size: 7vw;
+            margin: 5px;
         }
         @media (orientation:landscape) {
             main{
@@ -39,42 +43,34 @@
                 height: 100vh;
             }
             p{
-                font-size: 8vh;
+                font-size: 7vh;
             }
             h1{
-                font-size: 17vh;
+                font-size: 10vh;
             }
         }
     </style>
 </head>
 <body>
-    <main class="d-flex justify-content-evenly align-items-center">
+    <main class="d-flex justify-content-center align-items-center">
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <div class="w-100 h-25 btn-group bg-danger" role="group" aria-label="Basic example">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Data</button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Local</button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">Confirmar Presença</button>
-            </div>
-            <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    01/01/23
-                </div>
-            </div>
-            <div class="w-100 h-50">
-                <img class="w-100 h-100 pt-1" src="img/flork-bolo.png" alt="Foto">
+            <div class="w-100 h-50 mb-2">
+                <img class="w-100 h-100" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);">
             </div>
             <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
-                <p class="">VEM QUE VAI TER BOLO</p>
+                <h1 class="">Festa da Sophia</h1>
+                <p>-2 anos-</p>
             </div>
         </article>
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <div class="w-100 h-75 bg-light">
-                <img class="w-100 h-100 px-3" src="img/bebe-quadrado.webp" alt="Foto" style="transform: scaleX(-1);">
+            <div class="w-100 h-25 d-flex justify-content-end align-items-center flex-column">
+                <p class="d-flex">VEM QUE VAI TER BOLO</p>
             </div>
-            <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
-                <p class="m-0">Sophia</p>
-                <p class="m-0">2 anos</p>
+            <div class="w-100 h-25">
+                <img class="w-100 h-100 pt-1" src="img/flork-bolo.png" alt="Foto">
             </div>
+            <div class="h-25 d-flex align-items-end"><p>sábado, 01 de janeiro às 18h</p></div>
+            <div class="h-25 d-flex align-items-start"><p>confirmar presença</p></div>
         </article>
     </main>
 
