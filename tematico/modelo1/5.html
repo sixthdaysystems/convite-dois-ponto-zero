@@ -14,7 +14,7 @@
             height: 100vh;
             flex-direction: column;
             background-image: url(img/estrelas-com-fundo-sunburst_53876-93178.webp);
-            background-size: cover;
+            background-size: contain;
         }
         article{
             width: 100vw;
@@ -33,10 +33,12 @@
             font-family: 'Itim', cursive;
             font-size: 7vw;
             margin: 5px;
+            text-shadow: 0px 0px 5px white;
         }
         @media (orientation:landscape) {
             main{
                 flex-direction: row;
+                background-size: cover;
             }
             article{
                 width: 50vw;
@@ -63,11 +65,11 @@
             </div>
         </article>
         <article class="d-flex justify-content-center align-items-center flex-column">
-            <div class="w-100 h-25 d-flex justify-content-end align-items-center flex-column">
+            <div class="w-100 h-25 d-flex justify-content-center align-items-center flex-column">
                 <p class="d-flex">VEM QUE VAI TER BOLO</p>
             </div>
             <div class="w-100 h-25">
-                <img class="w-100 h-100 pt-1" src="img/flork-bolo.png" alt="Foto">
+                <img class="w-100 h-100" src="img/flork-bolo.png" alt="Foto">
             </div>
             <div class="h-25 d-flex align-items-end"><p>sábado, 01 de janeiro às 18h</p></div>
             <div class="h-25 d-flex align-items-start"><p>confirmar presença</p></div>
