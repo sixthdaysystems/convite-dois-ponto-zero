@@ -13,7 +13,7 @@
             width: 100vw;
             height: 100vh;
             flex-direction: column;
-            background-image: url(img/magicpattern-svg-chart-1667227159122.png);
+            background-image: url(img/por-do-sol.png);
             background-size: cover;
         }
         article{
@@ -36,6 +36,11 @@
             width: 70%;
             height: 100%;
         }
+        @media screen and (orientation:portrait) {
+            img{
+                max-width: 300px;
+            }
+        }
         @media (orientation:landscape) {
             main{
                 flex-direction: row;
@@ -45,7 +50,7 @@
                 height: 100vh;
             }
             p{
-                font-size: 5.5vh;
+                font-size: 5.2vh;
             }
             h1{
                 font-size: 20vh;
