@@ -34,6 +34,10 @@
         .select-tamanho{
             width: auto;
         }
+
+        select{
+            max-width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -62,7 +66,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item ms-auto">
-                        <a class="nav-link" href="#ec">Exemplo de Convite</a>
+                        <a class="nav-link" href="#ec">Flork</a>
                     </li>
                 </ul>
             </div>
@@ -71,12 +75,23 @@
 
     <div id="ec">
         <div class="title-section ps-2">
-            <p class="m-0 text-center">Exemplo de Convite</p>
+            <p class="m-0 text-center">Flork</p>
         </div>
-        <div class="row m-0 flex-nowrap overflow-auto background-section">
-
-            <div class="d-flex flex-column p-0 widthIframe">
-                <div class="embed-responsive pt-2 px-2">
+        <div class="row m-0 flex-nowrap overflow-auto">
+            <div class="d-flex p-0">
+                <div>
+                    <iframe class="bg-dark m-2 iframe1" src="" frameborder="0" width="150" height="300"></iframe>
+                </div>
+                <div class="d-flex flex-column">
+                    <div>
+                        <iframe class="bg-dark my-2 me-2 iframe1" src="" frameborder="0" width="300" height="150"></iframe>
+                    </div>
+                    <select class="form-select" name="select-modelo-1" id="select-modelo-1" onchange="iframe1()">
+                        <option selected>Modelos</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <!--<div class="embed-responsive pt-2 px-2">
                     <iframe class="width264 embed-responsive-item border w-100 bg-light" id="modelo-site23" src=""></iframe>
                 </div>
                 <select class="form-select w-auto mx-2 mb-2" name="select-modelo-23" id="select-modelo-23" onchange="iframeModelo23()">
@@ -84,7 +99,7 @@
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                </select>
+                </select>-->
             </div>
         </div>
     </div>
