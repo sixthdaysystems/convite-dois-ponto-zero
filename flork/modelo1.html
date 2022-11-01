@@ -30,6 +30,10 @@
             font-size: 25vw;
             font-family: 'Patua One', cursive;
         }
+        h6{
+            font-size: 7vw;
+            font-family: 'Itim', cursive;
+        }
         @media (orientation:landscape) {
             main{
                 flex-direction: row;
@@ -44,6 +48,9 @@
             h1{
                 font-size: 25vh;
             }
+            h6{
+                font-size: 7vh;
+            }
         }
 
         .rotate-vert-center{animation:rotate-vert-center .5s cubic-bezier(.455,.03,.515,.955) both}
@@ -56,24 +63,28 @@
 <body>
     <main class="d-flex">
         <article class="d-flex flex-column">
-            <div class="d-flex justify-content-center align-items-end" style="height: 34%;">
-                <p style="background-color: #e5e5f7;">REPI BIRDEI TU MI</p>
+            <div class="d-flex justify-content-center align-items-end" style="height: 25%;">
+                <p class="px-2" style="background-color: #FFF2A6;">REPI BIRDEI TU MI</p>
             </div>
             <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
                 <h1 class="px-2 rounded" style="color:#FF4242;background-color: #212529;" id="nome">MAISA</h1>
             </div>
-            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 33%;">
-                <p class="m-auto" style="background-color: #e5e5f7;">20 ANOS</p>
-                <p class="m-auto px-2 rounded" style="color:#FF4242;background-color: #212529;">SÁBADO, 01 DE JANEIRO ÀS 18H</p>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 42%;">
+                <p class="my-auto px-2" style="background-color: #FFCCDF;">20 ANOS</p>
+                <p class="my-auto px-2 rounded" style="color:#FF4242;background-color: #212529;">SÁBADO, 01 DE JANEIRO ÀS 18H</p>
             </div>
         </article>
         <article class="d-flex flex-column">
             <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
-                <p style="background-color: #e5e5f7;"><a class="text-dark" style="text-decoration: none;" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">RUA PRINCIPAL Nº 1</a></p>
+                <p class="px-2" style="background-color: #FFF2A6;"><a class="text-dark" style="text-decoration: none;" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">RUA PRINCIPAL Nº 1</a></p>
             </div>
-            <div class="d-flex justify-content-center align-items-center" style="height: 67%;">
+            <div class="d-flex justify-content-end align-items-start position-relative" style="height: 67%;">
+                <div class="position-absolute top-0 start-0 p-1">
+                    <h6 class="m-0">VEM QUE</h6>
+                    <h6 class="m-0">VAI TER</h6>
+                    <h6 class="m-0">BOLO!</h6>
+                </div>
                 <img class="h-100" src="img/flork-direita.png" alt="Flork" id="flork">
-                <div></div>
             </div>
         </article>
     </main>
