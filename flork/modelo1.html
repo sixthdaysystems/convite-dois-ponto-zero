@@ -71,10 +71,10 @@
     <main class="d-flex">
         <article class="d-flex flex-column">
             <div class="d-flex justify-content-center align-items-end" style="height: 25%;">
-                <p class="px-2">REPI BIRDEI TU MI</p>
+                <p class="px-2" onclick="this.innerHTML='PARABÊNS PARA VOCÊ'">REPI BIRDEI TU MI</p>
             </div>
             <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
-                <h1 class="px-2 rounded" style="color:#FF4242;background-color: #212529;" id="nome">MAISA</h1>
+                <h1 class="px-2 rounded mw-100" style="color:#FF4242;background-color: #212529;" id="nome">MAISA</h1>
             </div>
             <div class="d-flex justify-content-center align-items-center flex-column" style="height: 42%;">
                 <p class="my-auto px-2">20 ANOS</p>
@@ -89,7 +89,7 @@
                 <div class="position-absolute top-0 start-0 p-1 bg-light rounded">
                     <h6 class="m-0">VEM QUE</h6>
                     <h6 class="m-0">VAI TER</h6>
-                    <h6 class="m-0">BOLO!</h6>
+                    <h6 onclick="notifyMe()" class="m-0">BOLO!</h6>
                 </div>
                 <img src="img/flork-direita.png" alt="Flork" id="flork" style="z-index: 1;">
             </div>
@@ -113,6 +113,31 @@
                 document.getElementById("nome").classList.remove("pulsate-bck");
             }, 500);
         });
+
+        function notifyMe() {
+        if (!("Notification" in window)) {
+            // Check if the browser supports notifications
+            alert("This browser does not support desktop notification");
+        } else if (Notification.permission === "granted") {
+            // Check whether notification permissions have already been granted;
+            // if so, create a notification
+            const notification = new Notification("Hi there!");
+            // …
+        } else if (Notification.permission !== "denied") {
+            // We need to ask the user for permission
+            Notification.requestPermission().then((permission) => {
+            // If the user accepts, let's create a notification
+            if (permission === "granted") {
+                const notification = new Notification("Hi there!");
+                // …
+            }
+            });
+        }
+
+        // At last, if the user has denied notifications, and you
+        // want to be respectful there is no need to bother them anymore.
+        }
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
