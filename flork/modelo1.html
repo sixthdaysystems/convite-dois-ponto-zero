@@ -9,6 +9,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
         main{
             width: 100vw;
             height: 100vh;
@@ -83,7 +87,25 @@
         </article>
         <article class="d-flex flex-column">
             <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
-                <p class="px-2"><a class="text-dark" style="text-decoration: none;" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank">RUA PRINCIPAL Nº 1</a></p>
+                <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modalEndereco">RUA PRINCIPAL Nº 1</button>
+                <div class="modal fade" id="modalEndereco" tabindex="-1" aria-labelledby="modalEnderecoLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modalEnderecoLabel">Endereço</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h4 id="endereco">Rua Principal 1</h4>
+                                <button class="btn btn-primary btn-sm" onclick="copiar()">Copiar Endereço</button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary"><a class="text-light" href="https://goo.gl/maps/C9kbZYZ8dxg19NuLA" target="_blank" style="text-decoration: none;">Ir</a></button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="d-flex justify-content-end align-items-start position-relative" style="height: 67%;">
                 <div class="position-absolute top-0 start-0 p-1 bg-light rounded">
@@ -116,6 +138,10 @@
         
         function mudarTexto() {
             document.getElementById('repi').textContent == "REPI BIRDEI TU MI" ? document.getElementById('repi').innerHTML = "PARABÉNS PARA MIM" : document.getElementById('repi').innerHTML = "REPI BIRDEI TU MI";
+        }
+
+        function copiar(){
+            navigator.clipboard.writeText(document.getElementById("endereco").innerHTML);
         }
     </script>
 
