@@ -71,7 +71,7 @@
     <main class="d-flex">
         <article class="d-flex flex-column">
             <div class="d-flex justify-content-center align-items-end" style="height: 25%;">
-                <p class="px-2" onclick="this.innerHTML='PARABÊNS PARA VOCÊ'">REPI BIRDEI TU MI</p>
+                <p class="px-2" id="repi" onclick="mudarTexto()">REPI BIRDEI TU MI</p>
             </div>
             <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
                 <h1 class="px-2 rounded mw-100" style="color:#FF4242;background-color: #212529;" id="nome">MAISA</h1>
@@ -113,6 +113,10 @@
                 document.getElementById("nome").classList.remove("pulsate-bck");
             }, 500);
         });
+        
+        function mudarTexto() {
+            document.getElementById('repi').textContent == "REPI BIRDEI TU MI" ? document.getElementById('repi').innerHTML = "PARABÉNS PARA MIM" : document.getElementById('repi').innerHTML = "REPI BIRDEI TU MI";
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
