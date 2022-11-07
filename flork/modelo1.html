@@ -14,9 +14,10 @@
             width: 100vw;
             height: 100vh;
             flex-direction: column;
-            background-image: url(img/confetes.png);
-            background-size: cover;
-            background-position: center;
+            background-color: #e5e5f7;
+            background-image:  radial-gradient(#000 0.5px, transparent 0.5px), radial-gradient(#000 0.5px, #e5e5f7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
         }
         article{
             width: 100vw;
@@ -46,7 +47,6 @@
         @media (orientation:landscape) {
             main{
                 flex-direction: row;
-                background-size: 100% 100%;
             }
             article{
                 width: 50vw;
