@@ -36,8 +36,8 @@
             font-family: 'Itim', cursive;
         }
         img{
-            width: 100%;
-            height: 100%;
+            width: 70%;
+            height: 70%;
         }
         @media screen and (orientation:portrait) {
             img{
@@ -83,19 +83,14 @@
 <body>
     <main class="d-flex">
         <article class="d-flex flex-column">
-            <div class="d-flex justify-content-center align-items-end" style="height: 25%;">
-                <p class="px-2" id="repi" onclick="mudarTexto()">REPI BIRDEI TU MI</p>
-            </div>
-            <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
+            <div class="d-flex justify-content-center" style="height: 33%;">
                 <h1 class="px-2 rounded mw-100 my-auto" style="color:#FF4242;background-color: #212529;" id="nome">MAISA</h1>
             </div>
-            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 42%;">
+            <div class="d-flex justify-content-center align-items-center flex-column" style="height: 34%;">
                 <p class="my-auto px-2 fw-bold">20 ANOS</p>
                 <p class="my-auto px-2 rounded" style="color:#FF4242;background-color: #212529;">SÁBADO, 01 DE JANEIRO ÀS 18H</p>
             </div>
-        </article>
-        <article class="d-flex flex-column">
-            <div class="d-flex justify-content-center align-items-center" style="height: 40%;">
+            <div class="d-flex justify-content-center align-items-center" style="height: 33%;">
                 <p class="text-decoration-underline text-center m-0" id="botaoEndereco" data-bs-toggle="modal" data-bs-target="#modalEndereco">Parque Nacional da Tijuca - Alto da Boa Vista, Rio de Janeiro - RJ</p>
                 <div class="modal fade" id="modalEndereco" tabindex="-1" aria-labelledby="modalEnderecoLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -116,13 +111,17 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex" style="height: 60%;">
+        </article>
+        <article class="d-flex flex-column">
+            <div class="d-flex justify-content-center align-items-center" style="height: 40%;">
                 <div class="w-50 d-flex justify-content-center align-items-center flex-column">
                     <h6 class="m-0">VEM QUE</h6>
                     <h6 class="m-0">VAI TER</h6>
                     <h6 class="m-0">BOLO!</h6>
                 </div>
-                <div class="w-50 d-flex justify-content-center">
+            </div>
+            <div class="d-flex justify-content-center" style="height: 60%;">
+                <div class="img-fluid d-flex justify-content-center align-items-center bg-light border border-dark border-3" style="border-radius: 50%;aspect-ratio : 1 / 1;background-image: url(img/confete-quadrado.webp);background-size: cover;">
                     <img src="img/flork-direita.png" alt="Flork" id="flork" style="z-index: 1;">
                 </div>
             </div>
@@ -146,10 +145,6 @@
                 document.getElementById("nome").classList.remove("pulsate-bck");
             }, 500);
         });
-        
-        function mudarTexto() {
-            document.getElementById('repi').textContent == "REPI BIRDEI TU MI" ? document.getElementById('repi').innerHTML = "PARABÉNS PARA MIM" : document.getElementById('repi').innerHTML = "REPI BIRDEI TU MI";
-        }
 
         function copiar(){
             navigator.clipboard.writeText(document.getElementById("endereco").innerHTML);
