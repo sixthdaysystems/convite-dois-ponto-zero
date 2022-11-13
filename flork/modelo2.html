@@ -8,12 +8,25 @@
     <link rel="shortcut icon" href="img/icon-instagram.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         :root{
             --cor-separacao: rgb(219,219,219);
         }
         *{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             user-select: none;
+        }
+        h1{
+            font-family: 'Roboto', sans-serif;
+        }
+        svg{
+            cursor: pointer;
+        }
+        p{
+            cursor: pointer;
+            color: #383838;
+            font-size: 14px;
+            line-height: 18px;
         }
         header{
             height: 44px;
@@ -28,6 +41,7 @@
         .stories-foto{
             width: 56px;
             height: 56px;
+            cursor: pointer;
         }
         .stories-texto{
             width: 56px;
@@ -39,12 +53,9 @@
             margin: 14px 8px 14px 16px;
         }
         .title-section p{
-            color: #383838;
             font-weight: 600;
             cursor: pointer;
-            font-size: 14px;
             padding: 9px;
-            line-height: 18px;
         }
         .buttons-section{
             height: 50px;
@@ -54,6 +65,15 @@
         .buttons-section div{
             width: 40px;
             height: 40px;
+        }
+        .pointer{
+            cursor: pointer;
+        }
+        @media (orientation:landscape) {
+            body{
+                width: 100vh;
+                margin: auto;
+            }
         }
     </style>
 </head>
@@ -70,7 +90,7 @@
                 <svg aria-label="Notificações" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
             </div>
             <div class="d-flex justify-content-center align-items-center" style="width: 48px;margin-top: 1px;">
-                <img src="img/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9Ik1lc3NlbmdlciIgY2xhc3M9Il9hYjYtIiBjb2xvcj0iIzI2MjYyNiIgZmlsbD0iIzI2MjYyNiIgaGVpZ2h0PSIyNCIgcm9sZT0iaW1nIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCI+PHBhdGggZD0iTTEyLjAw.svg" alt="Mensageiro">
+                <svg aria-label="Messenger" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.003 2.001a9.705 9.705 0 1 1 0 19.4 10.876 10.876 0 0 1-2.895-.384.798.798 0 0 0-.533.04l-1.984.876a.801.801 0 0 1-1.123-.708l-.054-1.78a.806.806 0 0 0-.27-.569 9.49 9.49 0 0 1-3.14-7.175 9.65 9.65 0 0 1 10-9.7Z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739"></path><path d="M17.79 10.132a.659.659 0 0 0-.962-.873l-2.556 2.05a.63.63 0 0 1-.758.002L11.06 9.47a1.576 1.576 0 0 0-2.277.42l-2.567 3.98a.659.659 0 0 0 .961.875l2.556-2.049a.63.63 0 0 1 .759-.002l2.452 1.84a1.576 1.576 0 0 0 2.278-.42Z" fill-rule="evenodd"></path></svg>
             </div>
         </div>
     </header>
@@ -79,11 +99,11 @@
         <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
             <div class="stories-span row m-0 d-flex justify-content-center align-items-center">
                 <div class="stories-foto p-0 position-relative">
-                    <img class="w-100 h-100 rounded-circle" src="img/tata1.jpg" alt="Foto" style="outline: medium ridge lightgray;">
+                    <img class="w-100 h-100 rounded-circle" src="img/tata1.jpg" alt="Foto" style="outline: medium solid lightgray;">
                     <svg class="position-absolute rounded-circle" style="bottom: 0;right: 0px;background-color: white;outline: thin solid white;" aria-label="Ícone de mais" class="_ab6-" color="#0095f6" fill="#0095f6" height="16" role="img" viewBox="0 0 24 24" width="16"><path d="M12.001.504a11.5 11.5 0 1 0 11.5 11.5 11.513 11.513 0 0 0-11.5-11.5Zm5 12.5h-4v4a1 1 0 0 1-2 0v-4h-4a1 1 0 1 1 0-2h4v-4a1 1 0 1 1 2 0v4h4a1 1 0 0 1 0 2Z"></path></svg>
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
-                    <p class="text-muted">Seu story</p>
+                    <p class="text-muted text-nowrap">Seu story</p>
                 </div>
             </div>
         </span>
@@ -142,28 +162,116 @@
     <main>
         <section>
             <div class="title-section d-flex flex-row">
-                <div style="width: 32px;height: 32px;"><img class="w-100 h-100 rounded-circle" src="img/tata1.jpg" alt="Foto"></div>
-                <div class="align-items-center d-flex"><p class="m-0">tatawerneck</p></div>
-                <div class="ms-auto" style="width: 32px;height: 32px;"><svg aria-label="Mais opções" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg></div>
+                <div style="width: 32px;height: 32px;">
+                    <img class="w-100 h-100 rounded-circle pointer" src="img/tata1.jpg" alt="Foto">
+                </div>
+                <div class="align-items-center d-flex">
+                    <p class="m-0">tatawerneck</p>
+                </div>
+                <div class="ms-auto" style="width: 32px;height: 32px;">
+                    <svg aria-label="Mais opções" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
+                </div>
             </div>
             <div>
                 <img class="img-fluid" src="img/tata-foto1.webp" alt="Foto">
             </div>
             <div class="buttons-section d-flex flex-row">
-                <div class="d-flex justify-content-center align-items-center"><svg aria-label="Notificações" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg></div>
-                <div class="d-flex justify-content-center align-items-center"><svg aria-label="Comentar" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg></div>
-                <div class="d-flex justify-content-center align-items-center"><svg aria-label="Compartilhar publicação" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg></div>
-                <div class="ms-auto d-flex justify-content-center align-items-center"><svg aria-label="Salvar" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg></div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <svg id="coracao-branco1" onclick="cb1()" aria-label="Notificações" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                    <svg style="display: none;" id="coracao-vermelho1" onclick="cv1()" aria-label="Descurtir" class="_ab6-" color="#ed4956" fill="#ed4956" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <svg aria-label="Comentar" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <svg aria-label="Compartilhar publicação" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                </div>
+                <div class="ms-auto d-flex justify-content-center align-items-center">
+                    <svg id="salvar-branco1" onclick="sb1()" aria-label="Salvar" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                    <svg id="salvar-preto1" onclick="sp1()" style="display: none;" aria-label="Remover" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20 22a.999.999 0 0 1-.687-.273L12 14.815l-7.313 6.912A1 1 0 0 1 3 21V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Z"></path></svg>
+                </div>
             </div>
-            <div>
-                <svg aria-label="Descurtir" class="_ab6-" color="#ed4956" fill="#ed4956" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+            <div style="height: 18px;margin: 2px 0px 8px 16px;">
+                <p class="fw-bold">100 curtidas</p>
             </div>
-            <div>
-                <svg aria-label="Remover" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20 22a.999.999 0 0 1-.687-.273L12 14.815l-7.313 6.912A1 1 0 0 1 3 21V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Z"></path></svg>
+            <div style="margin: 0px 16px 4px 16px;">
+                <p class="m-0"><span class="fw-bold">tatawerneck</span> Depois de tanto viver e de tanto aprender, completo mais um ano de vida</p>
+            </div>
+            <div style="margin: 0px 16px 4px 16px;">
+                <p class="text-muted m-0">Ver todos os 100 comentários</p>
+            </div>
+            <div style="margin: 0px 16px 4px 16px;">
+                <p><span class="text-muted">JANEIRO 1 </span><span class="fw-bold">Ver tradução</span></p>
+            </div>
+        </section>
+
+        <section>
+            <div class="title-section d-flex flex-row">
+                <div style="width: 32px;height: 32px;">
+                    <img class="w-100 h-100 rounded-circle pointer" src="img/tata1.jpg" alt="Foto">
+                </div>
+                <div class="align-items-center d-flex">
+                    <p class="m-0">tatawerneck</p>
+                </div>
+                <div class="ms-auto" style="width: 32px;height: 32px;">
+                    <svg aria-label="Mais opções" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column" style="background: url(img/background-text1.webp);background-size: cover;background-position: center;padding: 16px;">
+                <h1 class="text-light" style="text-shadow: 1px 1px 3px black;">Sábado às 18h</h1>
+                <h1 class="text-light" style="text-shadow: 1px 1px 3px black;">01/01/23</h1>
+                <h1 class="text-light text-center" style="text-shadow: 1px 1px 3px black;">Local: Parque Nacional da Tijuca - Alto da Boa Vista, Rio de Janeiro - RJ</h1>
+            </div>
+            <div class="buttons-section d-flex flex-row">
+                <div class="d-flex justify-content-center align-items-center">
+                    <svg id="coracao-branco1" onclick="cb1()" aria-label="Notificações" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                    <svg style="display: none;" id="coracao-vermelho1" onclick="cv1()" aria-label="Descurtir" class="_ab6-" color="#ed4956" fill="#ed4956" height="24" role="img" viewBox="0 0 48 48" width="24"><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <svg aria-label="Comentar" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <svg aria-label="Compartilhar publicação" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                </div>
+                <div class="ms-auto d-flex justify-content-center align-items-center">
+                    <svg id="salvar-branco1" onclick="sb1()" aria-label="Salvar" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                    <svg id="salvar-preto1" onclick="sp1()" style="display: none;" aria-label="Remover" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20 22a.999.999 0 0 1-.687-.273L12 14.815l-7.313 6.912A1 1 0 0 1 3 21V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Z"></path></svg>
+                </div>
+            </div>
+            <div style="height: 18px;margin: 2px 0px 8px 16px;">
+                <p class="fw-bold">200 curtidas</p>
+            </div>
+            <div style="margin: 0px 16px 4px 16px;">
+                <p class="m-0"><span class="fw-bold">tatawerneck</span> Data, horário e local</p>
+            </div>
+            <div style="margin: 0px 16px 4px 16px;">
+                <p class="text-muted m-0">Ver todos os 10 comentários</p>
+            </div>
+            <div style="margin: 0px 16px 4px 16px;">
+                <p><span class="text-muted">JANEIRO 1 </span><span class="fw-bold">Ver tradução</span></p>
             </div>
         </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script>
+        function cb1(){
+            document.getElementById('coracao-branco1').style.display= "none";
+            document.getElementById('coracao-vermelho1').style.display= "block";
+        }
+        function cv1(){
+            document.getElementById('coracao-vermelho1').style.display= "none";
+            document.getElementById('coracao-branco1').style.display= "block";
+        }
+        function sb1(){
+            document.getElementById('salvar-branco1').style.display= "none";
+            document.getElementById('salvar-preto1').style.display= "block";
+        }
+        function sp1(){
+            document.getElementById('salvar-preto1').style.display= "none";
+            document.getElementById('salvar-branco1').style.display= "block";
+        }
+    </script>
 </body>
 </html>
