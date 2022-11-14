@@ -16,6 +16,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             user-select: none;
         }
+        /*geral*/
         h1{
             font-family: 'Roboto', sans-serif;
         }
@@ -31,6 +32,11 @@
         header{
             height: 44px;
         }
+        aside span{
+            min-width: 80px;
+            height: 105px;
+        }
+        /*criacao*/
         .borda-bottom{
             border-bottom: 1px solid var(--cor-separacao);
         }
@@ -69,6 +75,17 @@
         .pointer{
             cursor: pointer;
         }
+        .outline-stories{
+            outline: 1px solid lightgray;
+            outline-offset: 3px;
+        }
+        /*bootstrap*/
+        .modal-header{
+            border-bottom: 0;
+        }
+        .modal-footer{
+            border-top: 0;
+        }
         @media (orientation:landscape) and (min-width:450px) {
             body{
                 width: 100vh;
@@ -100,10 +117,10 @@
     </header>
 
     <aside class="d-flex flex-row borda-bottom" style="height: 105px;margin-left: 16px;overflow-y: hidden;">
-        <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
+        <span class="d-flex align-items-center">
             <div class="stories-span row m-0 d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#modalStory1">
                 <div class="stories-foto p-0 position-relative">
-                    <img class="w-100 h-100 rounded-circle" src="img/tata1.jpg" alt="Foto" style="outline: medium solid lightgray;">
+                    <img class="w-100 h-100 rounded-circle outline-stories" src="img/tata1.jpg" alt="Foto">
                     <svg class="position-absolute rounded-circle" style="bottom: 0;right: 0px;background-color: white;outline: thin solid white;" aria-label="Ícone de mais" class="_ab6-" color="#0095f6" fill="#0095f6" height="16" role="img" viewBox="0 0 24 24" width="16"><path d="M12.001.504a11.5 11.5 0 1 0 11.5 11.5 11.513 11.513 0 0 0-11.5-11.5Zm5 12.5h-4v4a1 1 0 0 1-2 0v-4h-4a1 1 0 1 1 0-2h4v-4a1 1 0 1 1 2 0v4h4a1 1 0 0 1 0 2Z"></path></svg>
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
@@ -113,66 +130,141 @@
             <div class="modal fade" id="modalStory1" tabindex="-1" aria-labelledby="modalStory1label" aria-hidden="true">
                 <div class="modal-dialog modal-fullscreen">
                     <div class="modal-content" style="background-image: url(img/tata-foto1.webp);background-size: cover;">
-                        <div class="modal-header" style="border: 0;">
+                        <div class="modal-header">
                             <div class="d-inline-flex align-items-center">
                                 <img class="img-fluid rounded-circle" src="img/tata1.jpg" alt="Foto" width="32px" height="32px">
-                                <p class="m-0 ps-2 fw-bold" id="modalStory1label">tatawerneck</p>
+                                <p class="m-0 ps-2 fw-bold text-light id="modalStory1label">tatawerneck</p>
                             </div>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body"></div>
-                        <div class="modal-footer" style="border: 0;"></div>
+                        <div class="modal-footer"></div>
                     </div>
                 </div>
             </div>
         </span>
-        <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
-            <div class="stories-span row m-0 d-flex justify-content-center align-items-center">
+        <span class="d-flex align-items-center">
+            <div class="stories-span row m-0 d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#modalStory2">
                 <div class="stories-foto p-0">
-                    <img class="w-100 h-100 rounded-circle" src="img/larissa2.jpg" alt="Foto" style="outline: medium ridge #E1306C;">
+                    <img class="w-100 h-100 rounded-circle outline-stories" src="img/larissa2.jpg" alt="Foto">
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
-                    <p>larissa...</p>
+                    <p class="text-muted">larissa...</p>
+                </div>
+            </div>
+            <div class="modal fade" id="modalStory2" tabindex="-1" aria-labelledby="modalStory2label" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content" style="background-image: url(img/larissa-foto1.webp);background-size: cover;background-position: center;">
+                        <div class="modal-header">
+                            <div class="d-inline-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/larissa2.jpg" alt="Foto" width="32px" height="32px">
+                                <p class="m-0 ps-2 fw-bold text-light" id="modalStory2label">larissamanoela</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer"></div>
+                    </div>
                 </div>
             </div>
         </span>
-        <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
-            <div class="stories-span row m-0 d-flex justify-content-center align-items-center">
+        <span class="d-flex align-items-center">
+            <div class="stories-span row m-0 d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#modalStory3">
                 <div class="stories-foto p-0">
-                    <img class="w-100 h-100 rounded-circle" src="img/maisa3.jpg" alt="Foto" style="outline: medium ridge #E1306C;">
+                    <img class="w-100 h-100 rounded-circle outline-stories" src="img/maisa3.jpg" alt="Foto">
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
-                    <p>maisa</p>
+                    <p class="text-muted">maisa</p>
+                </div>
+            </div>
+            <div class="modal fade" id="modalStory3" tabindex="-1" aria-labelledby="modalStory3label" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content" style="background-image: url(img/maisa-foto1.webp);background-size: cover;background-position: center;">
+                        <div class="modal-header">
+                            <div class="d-inline-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/maisa3.jpg" alt="Foto" width="32px" height="32px">
+                                <p class="m-0 ps-2 fw-bold text-light" id="modalStory3label">maisa</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer"></div>
+                    </div>
                 </div>
             </div>
         </span>
-        <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
-            <div class="stories-span row m-0 d-flex justify-content-center align-items-center">
+        <span class="d-flex align-items-center">
+            <div class="stories-span row m-0 d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#modalStory4">
                 <div class="stories-foto p-0">
-                    <img class="w-100 h-100 rounded-circle" src="img/marina4.jpg" alt="Foto" style="outline: medium ridge #E1306C;">
+                    <img class="w-100 h-100 rounded-circle outline-stories" src="img/marina4.jpg" alt="Foto">
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
-                    <p>marina...</p>
+                    <p class="text-muted">marina...</p>
+                </div>
+            </div>
+            <div class="modal fade" id="modalStory4" tabindex="-1" aria-labelledby="modalStory4label" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content" style="background-image: url(img/marina-foto1.webp);background-size: cover;">
+                        <div class="modal-header">
+                            <div class="d-inline-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/marina4.jpg" alt="Foto" width="32px" height="32px">
+                                <p class="m-0 ps-2 fw-bold text-light" id="modalStory4label">marinaruybarbosa</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer"></div>
+                    </div>
                 </div>
             </div>
         </span>
-        <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
-            <div class="stories-span row m-0 d-flex justify-content-center align-items-center">
+        <span class="d-flex align-items-center">
+            <div class="stories-span row m-0 d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#modalStory5">
                 <div class="stories-foto p-0">
-                    <img class="w-100 h-100 rounded-circle" src="img/simone5.jpg" alt="Foto" style="outline: medium ridge #E1306C;">
+                    <img class="w-100 h-100 rounded-circle outline-stories" src="img/simone5.jpg" alt="Foto">
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
-                    <p>simone...</p>
+                    <p class="text-muted">simone...</p>
+                </div>
+            </div>
+            <div class="modal fade" id="modalStory5" tabindex="-1" aria-labelledby="modalStory5label" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content" style="background-image: url(img/simone-foto1.webp);background-size: cover;background-position: center;">
+                        <div class="modal-header">
+                            <div class="d-inline-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/simone5.jpg" alt="Foto" width="32px" height="32px">
+                                <p class="m-0 ps-2 fw-bold text-light" id="modalStory5label">simonemendes</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer"></div>
+                    </div>
                 </div>
             </div>
         </span>
-        <span class="d-flex align-items-center" style="min-width: 80px;height: 105px;">
-            <div class="stories-span row m-0 d-flex justify-content-center align-items-center">
+        <span class="d-flex align-items-center">
+            <div class="stories-span row m-0 d-flex justify-content-center align-items-center"  data-bs-toggle="modal" data-bs-target="#modalStory6">
                 <div class="stories-foto p-0">
-                    <img class="w-100 h-100 rounded-circle" src="img/virginia6.jpg" alt="Foto" style="outline: medium ridge #E1306C;">
+                    <img class="w-100 h-100 rounded-circle outline-stories" src="img/virginia6.jpg" alt="Foto">
                 </div>
                 <div class="stories-texto p-0 d-flex justify-content-center">
-                    <p>virginia</p>
+                    <p class="text-muted">virginia</p>
+                </div>
+            </div>
+            <div class="modal fade" id="modalStory6" tabindex="-1" aria-labelledby="modalStory6label" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content" style="background-image: url(img/virginia-foto1.webp);background-size: cover;background-position: center;">
+                        <div class="modal-header">
+                            <div class="d-inline-flex align-items-center">
+                                <img class="img-fluid rounded-circle" src="img/virginia6.jpg" alt="Foto" width="32px" height="32px">
+                                <p class="m-0 ps-2 fw-bold text-light" id="modalStory6label">virginia</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body"></div>
+                        <div class="modal-footer"></div>
+                    </div>
                 </div>
             </div>
         </span>
@@ -346,6 +438,7 @@
 
     <script>
         function cb1(){
+            navigator.vibrate(200);
             document.getElementById('coracao-branco1').style.display= "none";
             document.getElementById('coracao-vermelho1').style.display= "block";
             document.getElementById('curtidas1').innerHTML="11 curtidas";
@@ -365,6 +458,7 @@
         }
 
         function cb2(){
+            navigator.vibrate(200);
             document.getElementById('coracao-branco2').style.display= "none";
             document.getElementById('coracao-vermelho2').style.display= "block";
             document.getElementById('curtidas2').innerHTML="21 curtidas";
@@ -384,6 +478,7 @@
         }
 
         function cb3(){
+            navigator.vibrate(200);
             document.getElementById('coracao-branco3').style.display= "none";
             document.getElementById('coracao-vermelho3').style.display= "block";
             document.getElementById('curtidas3').innerHTML="31 curtidas";
