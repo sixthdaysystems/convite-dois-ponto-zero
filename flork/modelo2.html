@@ -69,8 +69,12 @@
         .pointer{
             cursor: pointer;
         }
-        @media (orientation:landscape) {
+        @media (orientation:landscape) and (min-width:450px) {
             body{
+                width: 100vh;
+                margin: auto;
+            }
+            footer{
                 width: 100vh;
                 margin: auto;
             }
@@ -220,7 +224,7 @@
             <div class="d-flex justify-content-center align-items-center flex-column" style="background: url(img/background-text1.jpg);background-size: cover;padding: 16px;">
                 <h1 style="text-shadow: 1px 1px 3px white;">Sábado às 18h</h1>
                 <h1 style="text-shadow: 1px 1px 3px white;">01/01/23</h1>
-                <h1 class="text-center" style="text-shadow: 1px 1px 3px white;">Local: Parque Nacional da Tijuca - Alto da Boa Vista, Rio de Janeiro - RJ</h1>
+                <h1 class="text-center" style="text-shadow: 1px 1px 3px white;">Falta <span id="dia"></span> dias</h1>
             </div>
             <div class="buttons-section d-flex flex-row">
                 <div class="d-flex justify-content-center align-items-center">
@@ -310,6 +314,19 @@
         function sp2(){
             document.getElementById('salvar-preto2').style.display= "none";
             document.getElementById('salvar-branco2').style.display= "block";
+        }
+
+        const dataAtual = new Date();
+        const aniversario = new Date(dataAtual.getTime() + (new Date('2023-01-01T24:00:00').getTime() - dataAtual.getTime()));
+        const atualizarContador = () => {
+            let currentTime = new Date();
+            let difference = aniversario - currentTime;
+            let dias = Math.floor(difference / 1000 / 60 / 60 / 24);
+            return dias
+        }
+        window.onload = () => {
+            atualizarContador();
+            document.getElementById('dia').innerHTML = atualizarContador();
         }
     </script>
 </body>
