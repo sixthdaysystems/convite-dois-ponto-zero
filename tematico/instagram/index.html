@@ -563,7 +563,7 @@
                 <p class="fw-bold" id="p2curtidas">50 curtidas</p>
             </div>
             <div class="div-frase-section">
-                <p class="m-0"><span class="fw-bold">flork </span>Delicada igual coice de jumento</p>
+                <p class="m-0"><span class="fw-bold">flork </span>Delicada igual coice de jumento...</p>
             </div>
         </section>
 
@@ -581,7 +581,9 @@
     <div style="height: 2.75rem;"></div>
     <footer class="fixed-bottom d-flex justify-content-around align-items-center" style="height: 2.75rem;background-color: #FAFAFA;">
         <div>
-            <svg aria-label="Página inicial" class="_ab6- svg-img-footer" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"></path></svg>
+            <a href="#header">
+                <svg aria-label="Página inicial" class="_ab6- svg-img-footer" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"></path></svg>
+            </a>
         </div>
         <div>
             <svg aria-label="Pesquisar e Explorar" class="_ab6- svg-img-footer" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="16.511" x2="22" y1="16.511" y2="22"></line></svg>
@@ -644,7 +646,7 @@
             var numeroCurtida = 41;
             setInterval(aumentarCurtida,100);
             function aumentarCurtida(){
-                if (numeroCurtida == 52) {
+                if (numeroCurtida == 100) {
                     clearInterval(numeroCurtida);
                 }else{
                     document.getElementById('p1curtidas').innerHTML=numeroCurtida;
