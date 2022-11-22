@@ -3,12 +3,20 @@ function iframe1(){
         document.getElementById('iframe1-vertical').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/tematico/instagram/index";
         document.getElementById('iframe1-horizontal').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/tematico/instagram/index";
     }else if(document.getElementById('select-modelo-1').value == '2'){
-        //document.getElementById('iframe1-vertical').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/flork/modelo1";
-        //document.getElementById('iframe1-horizontal').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/flork/modelo1";
-        document.getElementById('iframe1-vertical').src="https://sixthdaysystems.github.io/aniversario/ravy/index";
-        document.getElementById('iframe1-horizontal').src="https://sixthdaysystems.github.io/aniversario/ravy/index";
+        document.getElementById('iframe1-vertical').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/flork/modelo1";
+        document.getElementById('iframe1-horizontal').src="https://sixthdaysystems.github.io/convite-dois-ponto-zero/flork/modelo1";
     }else {
         document.getElementById('iframe1-vertical').src="";
         document.getElementById('iframe1-horizontal').src="";
+    }
+}
+
+function iframe2(){
+    if (document.getElementById('select-modelo-2').value == '1') {
+        document.getElementById('iframe2-vertical').src="https://sixthdaysystems.github.io/aniversario/ravy/index";
+        document.getElementById('iframe2-horizontal').src="https://sixthdaysystems.github.io/aniversario/ravy/index";
+    }else {
+        document.getElementById('iframe2-vertical').src="";
+        document.getElementById('iframe2-horizontal').src="";
     }
 }
